@@ -1,0 +1,51 @@
+/**********************************
+attribution to Jonathan Snook "Scalable and Modular Architecture for CSS".
+these are the modules that will be in the major layout containers that you defined in the layout.css.  These are tabs, customized list view, buttons.  Modules contain the content and are the majority of your site
+***********************************/
+
+.m-text-align {
+  text-align: center;
+  margin: 0;
+}
+.m-topheader-text {
+ font-family: 'Montserrat', sans-serif;
+ margin: 1rem;
+ text-align: center;
+
+}
+.m-topheader-h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  text-align: center;
+}
+.m-topheader-h3 {
+  font-family:font-family: 'Caudex', serif;
+  color: #666;
+  text-align: center;
+}
+.m-nav-list  {
+  list-style-type: none;
+  margin: .5rem .75rem;
+  display: inline-block;
+}
+.m-nav-list li {
+color: #fff;
+font-size: 1.0rem;
+text-decoration: none;
+display: inline-block;
+margin-right: .5rem;
+}
+
+.m-nav-images {
+  width: 35px;
+  height: 35px;
+}
+.m-accordian-panel {
+  display: none;
+}
+.m-filters {
+  list-style-type: none;
+}
+p.m-posteddate{
+  color: rgba(128, 128, 128, 0.55);
+}

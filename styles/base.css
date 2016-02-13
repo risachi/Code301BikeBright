@@ -1,0 +1,27 @@
+/*
+attribution to Jonathan Snook "Scalable and Modular Architecture for CSS".
+Includes basic elements (body, html, h1, h2,div, li, p), no classes or ids.  Naming convention is that you just use the name of the element.  Very simple.   This could be your css reset/normalize.  The author (Jonathan Snook) recommends not using reset or normalize.
+*/
+body {
+  padding: 1rem .5rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  max-width: 60rem;
+  margin: 0 auto;
+  color: #333;
+  background-color: #fff;
+  background-image: url("../img/sprinkles.png");
+}
+
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.0rem;
+}
+h3 {
+  font-size: .85rem;
+}
