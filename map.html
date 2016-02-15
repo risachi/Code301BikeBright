@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Usage notes
+1) I have all the styles/scripts inline currently, but we'll need to seperate eventually.
+2) You'll need to replace the async defer call to google maps with the actual API key. -->
+  <html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <title>Scaffolding Site</title>
+      <link rel="stylesheet" href="styles/base.css">
+      <link rel="stylesheet" href="styles/layout.css">
+      <link rel="stylesheet" href="styles/modules.css">
+      <link rel="stylesheet" href="styles/state.css">
+      <meta name="viewport" content="width=device-width">
+      <!-- Map specific styles here -->
+      <style type="text/css">
+        html, body { height: 100%; margin: 0; padding: 0; }
+        #map { height: 50%; width: 50%; }
+      </style>
+
+    </head>
+    <body>
+      <div id="map"></div>
+      <script type="text/javascript">
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 45.516364, lng: -122.668343},
+          zoom: 12,
+          minZoom: 12
+          });
+        }
+      </script>
+
+      <script async defer
+        src='https://maps.googleapis.com/maps/api/js?key=API_KEY_HERE&callback=initMap'>
+      </script>
+      <script src="scripts/vendor/jquery-1.11.3.js"></script>
+      <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+    </body>
+  </html>
