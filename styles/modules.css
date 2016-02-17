@@ -51,7 +51,12 @@ p.m-posteddate{
 }
 
 /* TOP NAVIGATION*/
+#title {
+  display: flex;
+  flex-direction: row;
+}
 #title h1 {
+display: flex;
 text-transform: capitalize;
 font-family: Raleway-SemiBold;
 font-size: 36px;
@@ -60,7 +65,7 @@ letter-spacing: 0.08px;
 line-height: 42px;
 }
 #title h2 {
-  /* Bright: */
+display: flex;
 font-family: Satisfy;
 font-size: 17.92px;
 color: #F7F5F5;
