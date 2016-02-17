@@ -175,8 +175,9 @@ line-height: 33px;
 .profile-photo {
   border: 1px solid black;
   display: flex;
+  flex-direction: column;
   width: 300px;
-  height: 500px;
+  height: auto;
   background-color: #fff;
   border:
 }
@@ -186,4 +187,19 @@ line-height: 33px;
   height: 200px;
   width: 200px;
   border-radius: 50%;
+}
+.profile-photo p {
+font-family: OpenSans;
+font-size: 13.49px;
+color: #666666;
+letter-spacing: 0.5px;
+line-height: 33px;
+padding: 10px;
+}
+.profile-photo h3 {
+  font-family: satisfy;
+  color: #181B34;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 0;
 }
