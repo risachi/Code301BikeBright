@@ -1,0 +1,434 @@
+{
+    "bikes": [
+        {
+            "id": 51055,
+            "title": "1975 Schwinn suburban",
+            "serial": "absent",
+            "manufacturer_name": "Schwinn",
+            "frame_model": "suburban",
+            "year": 1975,
+            "frame_colors": [
+                "Brown"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28881/small_schwinn.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28881/large_schwinn.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97217",
+            "date_stolen": 1436594400
+        },
+        {
+            "id": 50807,
+            "title": "2015 Bike Friday Haul a Day",
+            "serial": "32418",
+            "manufacturer_name": "Bike Friday",
+            "frame_model": "Haul a Day",
+            "year": 2015,
+            "frame_colors": [
+                "Blue"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28652/small_bikefriday_bike.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28652/large_bikefriday_bike.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Eugene, 97404",
+            "date_stolen": 1436533378
+        },
+        {
+            "id": 53738,
+            "title": "2014 Trek Fuel EX 8 26",
+            "serial": "WTU277G5126G",
+            "manufacturer_name": "Trek",
+            "frame_model": "Fuel EX 8 26",
+            "year": 2014,
+            "frame_colors": [
+                "Silver or Gray",
+                "Green"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/31351/small_IMG_20150316_134246.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/31351/large_IMG_20150316_134246.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Oak Grove, 97267",
+            "date_stolen": 1436508000
+        },
+        {
+            "id": 50815,
+            "title": "2013 Cannondale F29 Carbon 1",
+            "serial": "absent",
+            "manufacturer_name": "Cannondale",
+            "frame_model": "F29 Carbon 1",
+            "year": 2013,
+            "frame_colors": [
+                "White"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28707/small_10985906_10204610683373956_1480985437294044410_n.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28707/large_10985906_10204610683373956_1480985437294044410_n.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, OR, 97220",
+            "date_stolen": 1436508000
+        },
+        {
+            "id": 50801,
+            "title": "2012 Orbea Orca bronze",
+            "serial": "01101511849",
+            "manufacturer_name": "Orbea",
+            "frame_model": "Orca bronze",
+            "year": 2012,
+            "frame_colors": [
+                "Silver or Gray"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28649/small_image.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28649/large_image.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97217",
+            "date_stolen": 1436503061
+        },
+        {
+            "id": 50796,
+            "title": "2014 Cannondale Trail Sl 29 1",
+            "serial": "GM98870",
+            "manufacturer_name": "Cannondale",
+            "frame_model": "Trail Sl 29 1",
+            "year": 2014,
+            "frame_colors": [
+                "Black"
+            ],
+            "thumb": "https://bikebook.s3.amazonaws.com/uploads/Fr/11433/small_c14_29m_trlsl_1_blk.png",
+            "large_img": "https://bikebook.s3.amazonaws.com/uploads/Fr/11433/c14_29m_trlsl_1_blk.png",
+            "is_stock_img": true,
+            "stolen": true,
+            "stolen_location": "Portland, 97203",
+            "date_stolen": 1436501376
+        },
+        {
+            "id": 50271,
+            "title": "1986 Pinarello",
+            "serial": "absent",
+            "manufacturer_name": "Pinarello",
+            "frame_model": "",
+            "year": 1986,
+            "frame_colors": [
+                "Black",
+                "Pink"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland",
+            "date_stolen": 1436440866
+        },
+        {
+            "id": 50800,
+            "title": "2012 Orbea Orca bronze",
+            "serial": "01101511849",
+            "manufacturer_name": "Orbea",
+            "frame_model": "Orca bronze",
+            "year": 2012,
+            "frame_colors": [
+                "Silver or Gray"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28651/small_image.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28651/large_image.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97217",
+            "date_stolen": 1436421600
+        },
+        {
+            "id": 50995,
+            "title": "2014 Marin Bikes Muir Woods 29ER",
+            "serial": "A1591380",
+            "manufacturer_name": "Marin Bikes",
+            "frame_model": "Muir Woods 29ER",
+            "year": 2014,
+            "frame_colors": [
+                "Black"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28874/small_Unknown.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28874/large_Unknown.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97203",
+            "date_stolen": 1436421600
+        },
+        {
+            "id": 50252,
+            "title": "2013 Gravity Gravity",
+            "serial": "YXXXXXXXXXX",
+            "manufacturer_name": "Gravity",
+            "frame_model": "Gravity",
+            "year": 2013,
+            "frame_colors": [
+                "Silver or Gray"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97201",
+            "date_stolen": 1436406659
+        },
+        {
+            "id": 50237,
+            "title": "LeMond Racing Cycles Poprad",
+            "serial": "absent",
+            "manufacturer_name": "LeMond Racing Cycles",
+            "frame_model": "Poprad",
+            "year": null,
+            "frame_colors": [
+                "Orange"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28572/small_MVC-001F-1.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28572/large_MVC-001F-1.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, OR, 97217",
+            "date_stolen": 1436397432
+        },
+        {
+            "id": 50218,
+            "title": "Trek",
+            "serial": "absent",
+            "manufacturer_name": "Trek",
+            "frame_model": "",
+            "year": null,
+            "frame_colors": [
+                "Blue"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97213",
+            "date_stolen": 1436383514
+        },
+        {
+            "id": 50210,
+            "title": "Cannondale cad 2, r200",
+            "serial": "hlb13865",
+            "manufacturer_name": "Cannondale",
+            "frame_model": "cad 2, r200",
+            "year": null,
+            "frame_colors": [
+                "Black"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97205",
+            "date_stolen": 1436377439
+        },
+        {
+            "id": 50209,
+            "title": "2015 Giant Alight 2",
+            "serial": "c1ag3141",
+            "manufacturer_name": "Giant",
+            "frame_model": "Alight 2 ",
+            "year": 2015,
+            "frame_colors": [
+                "Purple"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28558/small_Alight-2-DD_Dark-Purple_gateway.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28558/large_Alight-2-DD_Dark-Purple_gateway.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97205",
+            "date_stolen": 1436376419
+        },
+        {
+            "id": 50203,
+            "title": "2013 Magna Nantucket",
+            "serial": "absent",
+            "manufacturer_name": "Magna",
+            "frame_model": "Nantucket",
+            "year": 2013,
+            "frame_colors": [
+                "Black"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28546/small_FullSizeRender.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28546/large_FullSizeRender.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97214",
+            "date_stolen": 1436372986
+        },
+        {
+            "id": 50229,
+            "title": "Bianchi Bianchi pista",
+            "serial": "absent",
+            "manufacturer_name": "Bianchi",
+            "frame_model": "Bianchi pista",
+            "year": null,
+            "frame_colors": [
+                "White",
+                "Blue"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, OR, 97209",
+            "date_stolen": 1436335200
+        },
+        {
+            "id": 50211,
+            "title": "2002 Cannondale FG1",
+            "serial": "absent",
+            "manufacturer_name": "Cannondale",
+            "frame_model": "FG1",
+            "year": 2002,
+            "frame_colors": [
+                "Silver or Gray",
+                "Stickers tape or other cover-up"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28559/small_11659267_10155706330845315_6340490232632864421_n.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28559/large_11659267_10155706330845315_6340490232632864421_n.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, OR, 97215",
+            "date_stolen": 1436335200
+        },
+        {
+            "id": 50927,
+            "title": "2013 Cannondale Synapse 5C",
+            "serial": "LM71021",
+            "manufacturer_name": "Cannondale",
+            "frame_model": "Synapse 5C",
+            "year": 2013,
+            "frame_colors": [
+                "White"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28781/small_TABarnhart_Cannondale_synapse.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28781/large_TABarnhart_Cannondale_synapse.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97233",
+            "date_stolen": 1436335200
+        },
+        {
+            "id": 50409,
+            "title": "2013 Gravity Gravity",
+            "serial": "Y4kjdfklj",
+            "manufacturer_name": "Gravity",
+            "frame_model": "Gravity",
+            "year": 2013,
+            "frame_colors": [
+                "Silver or Gray"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28618/small_mystolenbike.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28618/large_mystolenbike.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97201",
+            "date_stolen": 1436335200
+        },
+        {
+            "id": 50222,
+            "title": "Cannondale Black lightning",
+            "serial": "absent",
+            "manufacturer_name": "Cannondale",
+            "frame_model": "Black lightning",
+            "year": null,
+            "frame_colors": [
+                "Black"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97215",
+            "date_stolen": 1436335200
+        },
+        {
+            "id": 50193,
+            "title": "2004 Specialized FSR XC",
+            "serial": "absent",
+            "manufacturer_name": "Specialized",
+            "frame_model": "FSR XC",
+            "year": 2004,
+            "frame_colors": [
+                "Silver or Gray"
+            ],
+            "thumb": "https://bikebook.s3.amazonaws.com/uploads/Fr/4888/small_04XCblue_l.jpg",
+            "large_img": "https://bikebook.s3.amazonaws.com/uploads/Fr/4888/04XCblue_l.jpg",
+            "is_stock_img": true,
+            "stolen": true,
+            "stolen_location": "Portland",
+            "date_stolen": 1436331529
+        },
+        {
+            "id": 50139,
+            "title": "2013 Specialized Sirrus Elite",
+            "serial": "WSBC602115096H",
+            "manufacturer_name": "Specialized",
+            "frame_model": "Sirrus Elite",
+            "year": 2013,
+            "frame_colors": [
+                "Silver or Gray",
+                "Black"
+            ],
+            "thumb": "https://files.bikeindex.org/uploads/Pu/28489/small_image.jpg",
+            "large_img": "https://files.bikeindex.org/uploads/Pu/28489/large_image.jpg",
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97205",
+            "date_stolen": 1436292759
+        },
+        {
+            "id": 51190,
+            "title": "Jamis Earth Cruiser",
+            "serial": "absent",
+            "manufacturer_name": "Jamis",
+            "frame_model": "Earth Cruiser",
+            "year": null,
+            "frame_colors": [
+                "Silver or Gray"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97217",
+            "date_stolen": 1436248800
+        },
+        {
+            "id": 50175,
+            "title": "2007 Bianchi Boardwalk",
+            "serial": "absent",
+            "manufacturer_name": "Bianchi",
+            "frame_model": "Boardwalk",
+            "year": 2007,
+            "frame_colors": [
+                "Teal"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97209",
+            "date_stolen": 1436248800
+        },
+        {
+            "id": 50099,
+            "title": "2014 SCOTT Sportster X50",
+            "serial": "AS3060793",
+            "manufacturer_name": "SCOTT",
+            "frame_model": "Sportster X50",
+            "year": 2014,
+            "frame_colors": [
+                "Black"
+            ],
+            "thumb": null,
+            "large_img": null,
+            "is_stock_img": false,
+            "stolen": true,
+            "stolen_location": "Portland, 97203",
+            "date_stolen": 1436225584
+        }
+    ]
+}

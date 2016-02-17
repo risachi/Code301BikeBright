@@ -30,6 +30,7 @@
         <p>To find the best place to lock your bike, just choose one of the options below.</p>
 
         <form action="" method="get" id="chooseLockType">
+          <input id="address-input" class="controls" type="text" placeholder="Enter a location">
           <select name="Bike Lock Types">
             <option value="ribbon">Ribbon</option>
             <option value="stainless">Stainless</option>
@@ -58,9 +59,9 @@
         }
       window.addEventListener('resize', initalize);
       </script> -->
-window.addEventListener('resize', initalize);
+<!-- window.addEventListener('resize', initalize); -->
       <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuLzy72ZhpOxhZrtAAg8dWGQXDKbYHTCg&libraries=visualization&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=initMap">
       </script>
       <script src="scripts/vendor/jquery-1.11.3.js"></script>
       <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
