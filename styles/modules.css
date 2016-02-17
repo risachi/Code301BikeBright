@@ -102,14 +102,14 @@ line-height: 26px;
   color: #fff;
 }
 
-/*What we are section*/
-.what-content {
+/*What we are/who we are section*/
+.section-content {
   margin: 0 auto;
   max-width: 70%;
   text-align: center;
 }
 
-.what-content h1 {
+.section-content h1 {
   /* WHAT WE ARE: */
 font-family: Raleway-Bold;
 font-size: 64px;
@@ -117,23 +117,24 @@ color: #FFFFFF;
 letter-spacing: 25.18px;
 line-height: 85px;
 text-align: center;
+text-transform: uppercase;
 }
 
-.what-content hr {
+.section-content hr {
   /* Line: */
 border: 1px solid #181B34;
 width: 70%;
 margin-top: -40px;
 margin-bottom: 40px;
 }
-.what-content p {
-  /* I have hinted that I: */
+.section-content p {
 font-family: OpenSans;
 font-size: 13.49px;
 color: #666666;
 letter-spacing: 0.5px;
 line-height: 33px;
 }
+
 /*LINKS SECTION*/
 .links {
   display: flex;
@@ -162,4 +163,20 @@ line-height: 33px;
 .discuss {
   background:linear-gradient(rgba(218,252,56,0.4),rgba(218,252,56,0.4)),url("/img/lady-bicycle.jpg");
   background-size: cover;
+}
+
+/*profile section*/
+#profiles {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  justify-content: space-around;
+}
+.profile-photo {
+  border: 1px solid black;
+  display: flex;
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border:
 }
