@@ -142,5 +142,24 @@ line-height: 33px;
 .links div {
   width: 50%;
   height: 450px;
-  background-color: blue;
+  font-family: Raleway-Bold;
+  font-size: 64px;
+  color: #FFFFFF;
+  letter-spacing: 20px;
+  line-height: 85px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.links div p {
+  margin: 0;
+}
+.map {
+  background:linear-gradient(rgba(24, 26, 52, 0.6),rgba(24, 26, 52, 0.6)),url("/img/single-bike.jpg");
+  background-size: cover;
+}
+.discuss {
+  background:linear-gradient(rgba(218,252,56,0.4),rgba(218,252,56,0.4)),url("/img/lady-bicycle.jpg");
+  background-size: cover;
 }
