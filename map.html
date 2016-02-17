@@ -16,6 +16,7 @@
         html, body { height: 100%; margin: 0; padding: 0; }
         #map { height: 70%; width: 70%; }
       </style>
+      <script src="scripts/map.js"></script>
 
     </head>
     <body>
@@ -23,32 +24,43 @@
         <h1>Title</h1>
         <p>Form placeholder.</p>
       </div>
+
+      <div id="control">
+        <h2>Find A Place to Lock Your Bike</h2>
+        <p>To find the best place to lock your bike, just choose one of the options below.</p>
+
+        <form action="" method="get" id="chooseLockType">
+          <select name="Bike Lock Types">
+            <option value="ribbon">Ribbon</option>
+            <option value="stainless">Stainless</option>
+            <option value="indoor">Indoor</option>
+          </select>
+          <form>
+            <input type="radio" name="video" value="Video Surveillance"/>video surveillance
+            <input type="radio" name="coveredparking" value="Covered Parking"/>covered parking
+          </form>
+        </form>
+        <form method="get" id="chooseLocation">
+          <button type="submit" id="currentLocation" class="usersLocation">Use Current Location</button>
+          <div class="clear"></div>
+      </div>
+          <div class="clear"></div>
+        </form>
+      </div>
       <div id="map"></div>
-      <script type="text/javascript">
-        var map;
-        function initalize() {
-          var mapOptions = {
-            center: {lat: 45.516364, lng: -122.668343},
-            zoom: 12
-            //minZoom: 12
-            //mapTypeId: google.maps.MapTypeId.TERRAIN
-          };
-          var map = map = new google.maps.Map(document.getElementById('map'), mapOptions);
-          map.data.loadGeoJson('/data/zipcodes.json');
+      <!-- <script type="text/javascript">
           map.data.setStyle({
             fillColor: 'grey',
             fillOpacity: 0.2,
             strokeWeight: 0.5
           });
-          //Optional Bike Layer
-          var bikeLayer = new google.maps.BicyclingLayer();
-          bikeLayer.setMap(map);
-        }
-        window.addEventListener('resize', initalize);
-      </script>
 
+        }
+      window.addEventListener('resize', initalize);
+      </script> -->
+window.addEventListener('resize', initalize);
       <script async defer
-        src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&callback=initalize'>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuLzy72ZhpOxhZrtAAg8dWGQXDKbYHTCg&libraries=visualization&callback=initMap">
       </script>
       <script src="scripts/vendor/jquery-1.11.3.js"></script>
       <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
