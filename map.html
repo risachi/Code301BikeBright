@@ -1,0 +1,68 @@
+<!doctype html>
+<!-- Usage notes
+1) I have all the styles/scripts inline currently, so the code that applies to the map is all in the same place. Once we have have everything in place, I plan to move these to seperate CSS/JS files.
+2) You'll need to replace the async defer call to google maps with the actual API key. -->
+  <html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <title>Scaffolding Site</title>
+      <link rel="stylesheet" href="styles/base.css">
+      <link rel="stylesheet" href="styles/layout.css">
+      <link rel="stylesheet" href="styles/modules.css">
+      <link rel="stylesheet" href="styles/state.css">
+      <meta name="viewport" content="width=device-width">
+      <!-- Map specific styles here -->
+      <style type="text/css">
+        html, body { height: 100%; margin: 0; padding: 0; }
+        #map { height: 70%; width: 70%; }
+      </style>
+      <script src="scripts/map.js"></script>
+
+    </head>
+    <body>
+      <div>
+        <h1>Title</h1>
+        <p>Form placeholder.</p>
+      </div>
+
+      <div id="control">
+        <h2>Find A Place to Lock Your Bike</h2>
+        <p>To find the best place to lock your bike, just choose one of the options below.</p>
+
+        <form action="" method="get" id="chooseLockType">
+          <select name="Bike Lock Types">
+            <option value="ribbon">Ribbon</option>
+            <option value="stainless">Stainless</option>
+            <option value="indoor">Indoor</option>
+          </select>
+          <form>
+            <input type="radio" name="video" value="Video Surveillance"/>video surveillance
+            <input type="radio" name="coveredparking" value="Covered Parking"/>covered parking
+          </form>
+        </form>
+        <form method="get" id="chooseLocation">
+          <button type="submit" id="currentLocation" class="usersLocation">Use Current Location</button>
+          <div class="clear"></div>
+      </div>
+          <div class="clear"></div>
+        </form>
+      </div>
+      <div id="map"></div>
+      <!-- <script type="text/javascript">
+          map.data.setStyle({
+            fillColor: 'grey',
+            fillOpacity: 0.2,
+            strokeWeight: 0.5
+          });
+
+        }
+      window.addEventListener('resize', initalize);
+      </script> -->
+window.addEventListener('resize', initalize);
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuLzy72ZhpOxhZrtAAg8dWGQXDKbYHTCg&libraries=visualization&callback=initMap">
+      </script>
+      <script src="scripts/vendor/jquery-1.11.3.js"></script>
+      <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+    </body>
+  </html>
