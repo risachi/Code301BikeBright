@@ -4,8 +4,5 @@ Naming convention is that you use an action verb for class names:  .div-is-hidde
 */
 @media screen and (min-width: 50rem) {
 	body {
-		border-left: 4px solid #666;
-		border-right: 4px solid #666;
-		padding: 1rem 2rem;
-    max-width: 75rem;
+
 	}
