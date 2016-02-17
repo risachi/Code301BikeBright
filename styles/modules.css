@@ -180,3 +180,10 @@ line-height: 33px;
   background-color: #fff;
   border:
 }
+.profile-photo img{
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
