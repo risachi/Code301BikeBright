@@ -97,6 +97,34 @@ heatmap.setMap(map);
     });
     map.panTo(latLng);
   }
+  /*** Stuff for the address search bar ***/
+  var address = (document.getElementById('address-input'));
+
+  var autocomplete = new google.maps.places.Autocomplete(address);
+  autocomplete.bindTo('bounds', map);
+  var marker = new google.maps.Marker({
+    position: {lat: 45.516463, lng: -122.675868},
+    map: map
+  });
+
+  autocomplete.addListener('place_changed', function() {
+  marker.setVisible(false);
+
+  var place = autocomplete.getPlace();
+  if (!place.geometry) {
+    window.alert("Autocomplete's returned place contains no geometry");
+    return;
+  }
+
+  if (place.geometry.viewport) {
+    map.fitBounds(place.geometry.viewport);
+  } else {
+    map.setCenter(place.geometry.location);
+    map.setZoom(17);
+  }
+  marker.setPosition(place.geometry.location);
+  marker.setVisible(true);
+});
 }
 
 function detectBrowser() {
@@ -111,4 +139,4 @@ function detectBrowser() {
    mapDiv.style.height = "800px"
   }
  }
-window.addEventListener('resize', initalize);
+window.addEventListener('resize', initMap);
