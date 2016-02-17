@@ -101,3 +101,46 @@ line-height: 26px;
   text-decoration: none;
   color: #fff;
 }
+
+/*What we are section*/
+.what-content {
+  margin: 0 auto;
+  max-width: 70%;
+  text-align: center;
+}
+
+.what-content h1 {
+  /* WHAT WE ARE: */
+font-family: Raleway-Bold;
+font-size: 64px;
+color: #FFFFFF;
+letter-spacing: 25.18px;
+line-height: 85px;
+text-align: center;
+}
+
+.what-content hr {
+  /* Line: */
+border: 1px solid #181B34;
+width: 70%;
+margin-top: -40px;
+margin-bottom: 40px;
+}
+.what-content p {
+  /* I have hinted that I: */
+font-family: OpenSans;
+font-size: 13.49px;
+color: #666666;
+letter-spacing: 0.5px;
+line-height: 33px;
+}
+/*LINKS SECTION*/
+.links {
+  display: flex;
+  flex-direction: row;
+}
+.links div {
+  width: 50%;
+  height: 450px;
+  color: blue;
+}
