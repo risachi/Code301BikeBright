@@ -51,24 +51,53 @@ p.m-posteddate{
 }
 
 /* TOP NAVIGATION*/
-#title {
+.logo {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
+  margin-left: 90px;
 }
-#title h1 {
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+  padding-top: 20px;
+}
+
+.title h1 {
 display: flex;
 text-transform: capitalize;
 font-family: Raleway-SemiBold;
+color: #fff;
 font-size: 36px;
-color: #F6F7FA;
 letter-spacing: 0.08px;
 line-height: 42px;
 }
-#title h2 {
+.title h2 {
 display: flex;
 font-family: Satisfy;
+color: #DAFC38;
+padding-left: 10px;
 font-size: 17.92px;
-color: #F7F5F5;
 letter-spacing: 0.03px;
 line-height: 26px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 90px;
+}
+
+.main-nav nav {
+  justify-content: space-around;
+  display: flex;
+  width: 400px;
+}
+
+.main-nav nav a {
+  text-decoration: none;
+  color: #fff;
 }
