@@ -49,3 +49,21 @@ margin-right: .5rem;
 p.m-posteddate{
   color: rgba(128, 128, 128, 0.55);
 }
+
+/* TOP NAVIGATION*/
+#title h1 {
+text-transform: capitalize;
+font-family: Raleway-SemiBold;
+font-size: 36px;
+color: #F6F7FA;
+letter-spacing: 0.08px;
+line-height: 42px;
+}
+#title h2 {
+  /* Bright: */
+font-family: Satisfy;
+font-size: 17.92px;
+color: #F7F5F5;
+letter-spacing: 0.03px;
+line-height: 26px;
+}
