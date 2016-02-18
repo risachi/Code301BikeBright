@@ -28,3 +28,9 @@ h2 {
 h3 {
   font-size: .85rem;
 }
+
+/* **********Disqus styles********** */
+#disqus_thread {
+  margin-left: 5em;
+  margin-right: -6em;
+}
