@@ -16,7 +16,7 @@
         html, body { height: 100%; margin: 0; padding: 0; }
         #map { height: 70%; width: 70%; }
       </style>
-      <script src="scripts/map.js"></script>
+
 
     </head>
     <body>
@@ -60,10 +60,21 @@
       window.addEventListener('resize', initalize);
       </script> -->
 <!-- window.addEventListener('resize', initalize); -->
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=initMap">
-      </script>
-      <script src="scripts/vendor/jquery-1.11.3.js"></script>
-      <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+<script>
+console.log("I am getting ready to call map api")
+</script>
+<script src="scripts/vendor/jquery-1.11.3.js"></script>
+<script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+<script src="scripts/map.js"></script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=Map.initMap">
+</script>
+<script>
+console.log("I finished calling map api")
+</script>
+
+
+
     </body>
   </html>
