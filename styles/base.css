@@ -29,6 +29,11 @@ h3 {
   font-size: .85rem;
 }
 
+footer {
+  height: 223px;
+  width: 100%;
+}
+
 /* **********Disqus styles********** */
 #disqus_thread {
   margin-left: 5em;
