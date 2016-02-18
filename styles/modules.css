@@ -214,6 +214,10 @@ width: 70%;
 margin-top: -40px;
 margin-bottom: 40px;
 }
+#contact-section {
+  display: flex;
+  justify-content: space-around;
+}
 .contact-background {
   background-color: #fff;
   width: 500px;
@@ -243,4 +247,9 @@ margin-bottom: 40px;
   font-size: 26px;
   color: #fff;
   background-color: #d8d8d8;
+}
+#home-map {
+  width: 400px;
+  height: 300px;
+  background-color: #ccc;
 }
