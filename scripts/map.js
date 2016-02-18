@@ -58,6 +58,12 @@ Map.initMap= function() {
   bikeLayer.setMap(map);
   Map.setZipStyle(feature);
 
+  var heatmap = new google.maps.visualization.HeatmapLayer({
+    data: heatmapData(),
+    map: map
+  });
+};
+
   // map.data.setStyle(function(feature){
   //   var highCrime = feature.getProperty('zipCode');
   //   var color = highCrime == 97201 ? 'red' : 'blue';
@@ -67,7 +73,6 @@ Map.initMap= function() {
   //   };
   // });
 
-};
 
 
   // var infowindow = new google.maps.InfoWindow({
