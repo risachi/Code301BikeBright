@@ -9,16 +9,25 @@ var seattleCenter = {lat: 47.6149938, lng: -122.4763323};
 Map.loadZipJson = function(){
   map.data.loadGeoJson('data/zipcodes.json');
 };
+
 Map.loadParkingJson = function(){
   map.data.loadGeoJson('data/Bicycle_Parking_pdx.geojson');
 };
+
+Map.showBikeLayer = function(){
+  var bikeLayer = new google.maps.BicyclingLayer();
+  bikeLayer.setMap(map);
+};
+
+Map.showHeatMap = function() {
+  var heatmap = new google.maps.visualization.HeatmapLayer({
+    data: heatMapData(),
+    map: map
+  });
+};
+
 Map.setZipStyle = function(feature){
   var highCrime = feature.getProperty('zipCode');
-  var color = highCrime == 97201 ? 'red' : 'blue';
-  return{
-    fillColor: color,
-    strokeWeight: 2
-  };
 };
 
 if(navigator.geolocation){
@@ -51,17 +60,11 @@ Map.initMap= function() {
     }
   }
   );
-  //map.data.loadGeoJson('data/zipcodes.json');
   Map.loadZipJson();
-  //Map.loadParkingJson();
-  var bikeLayer = new google.maps.BicyclingLayer();
-  bikeLayer.setMap(map);
-  Map.setZipStyle(feature);
-
-  var heatmap = new google.maps.visualization.HeatmapLayer({
-    data: heatmapData(),
-    map: map
-  });
+  Map.loadParkingJson();
+  Map.showBikeLayer();
+  Map.showHeatMap();
+  //Map.setZipStyle(arrayName);
 };
 
   // map.data.setStyle(function(feature){
