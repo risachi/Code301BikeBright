@@ -12,13 +12,13 @@ Map.loadZipJson = function(){
 Map.loadParkingJson = function(){
   map.data.loadGeoJson('data/Bicycle_Parking_pdx.geojson');
 };
-Map.showbikeLayer = function(){
+Map.showBikeLayer = function(){
   var bikeLayer = new google.maps.BicyclingLayer();
   bikeLayer.setMap(map);
 };
 Map.showHeatMap = function() {
   var heatmap = new google.maps.visualization.HeatmapLayer({
-    data: heatmapData,
+    data: heatMapData(),
     map: map
   });
 };
@@ -53,9 +53,9 @@ Map.initMap= function() {
     }
   }
   );
-  //Map.loadZipJson();
-  //Map.loadParkingJson();
-  //Map.showbikeLayer();
+  Map.loadZipJson();
+  Map.loadParkingJson();
+  Map.showBikeLayer();
   Map.showHeatMap();
   //Map.setZipStyle(feature);
 

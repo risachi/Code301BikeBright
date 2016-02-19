@@ -1,5 +1,4 @@
-function heatmapData(){
-  return [
+function heatMapData() {return [
     new google.maps.LatLng(45.6572477,-122.76191711425781),
     new google.maps.LatLng(45.6579478,-122.76191711425781),
     new google.maps.LatLng(45.6575479,-122.76191711425781),
