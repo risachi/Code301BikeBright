@@ -69,6 +69,7 @@ Map.defaultMap = function(){
     }
   }
   );
+  Map.addressBarInput();
 };
 
 
@@ -160,8 +161,6 @@ Map.addressBarInput = function(){
     //marker.setVisible(true);
   });
 };
-
-//Map.addressBarInput();
 
 //
 // function detectBrowser() {
