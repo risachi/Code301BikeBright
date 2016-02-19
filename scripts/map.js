@@ -71,16 +71,27 @@ Map.initMap= function() {
   //Map.setZipStyle(arrayName);
 };
 function defaultMapView(){
+  Map.initMap= function() {
     Map.defaultMap();
+  };
 };
-function parkingMapVIew(){
-  Map.defaultMap();
-  Map.loadParkingJson();
+//defaultMapView();
+function parkingMapView(){
+  Map.initMap= function() {
+    Map.defaultMap();
+    Map.loadParkingJson();
+  };
 };
+parkingMapView();
+
 function zipMapView(){
-  Map.defaultMap();
-  Map.loadZipJson();
+  Map.initMap= function() {
+    Map.defaultMap();
+    Map.loadZipJson();
+
+  };
 }
+//zipMapView();
 
   // map.data.setStyle(function(feature){
   //   var highCrime = feature.getProperty('zipCode');
