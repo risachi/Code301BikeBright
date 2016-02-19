@@ -6,6 +6,7 @@ var pos;
 var userCoords;
 var portlandCenter = {lat: 45.5296879, lng: -122.6526475};
 var seattleCenter = {lat: 47.6149938, lng: -122.4763323};
+
 Map.loadZipJson = function(){
   map.data.loadGeoJson('data/zipcodes.json');
 };
@@ -29,6 +30,23 @@ Map.showHeatMap = function() {
 Map.setZipStyle = function(feature){
   var highCrime = feature.getProperty('zipCode');
 };
+Map.defaultMap = function(){
+  map = new google.maps.Map(document.getElementById('map'),
+  {center: portlandCenter,
+  zoom: 10,
+  zoomControl: true,
+  mayTypeControl: true,
+  mapTypeControlOptions: {
+    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+    mapTypeIds: [
+      google.maps.MapTypeId.ROADMAP,
+      google.maps.MapTypeId.TERRAIN,
+      google.maps.MapTypeId.SATELLITE
+      ]
+    }
+  }
+  );
+};
 
 if(navigator.geolocation){
   function error(err){
@@ -45,21 +63,7 @@ if(navigator.geolocation){
 }
 
 Map.initMap= function() {
-  map = new google.maps.Map(document.getElementById('map'),
-  {center: portlandCenter,
-  zoom: 10,
-  zoomControl: true,
-  mayTypeControl: true,
-  mapTypeControlOptions: {
-    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-    mapTypeIds: [
-      google.maps.MapTypeId.ROADMAP,
-      google.maps.MapTypeId.TERRAIN,
-      google.maps.MapTypeId.SATELLITE
-      ]
-    }
-  }
-  );
+  Map.defaultMap();
   Map.loadZipJson();
   Map.loadParkingJson();
   Map.showBikeLayer();
