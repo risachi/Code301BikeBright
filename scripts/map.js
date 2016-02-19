@@ -12,13 +12,15 @@ Map.loadZipJson = function(){
 Map.loadParkingJson = function(){
   map.data.loadGeoJson('data/Bicycle_Parking_pdx.geojson');
 };
-Map.setZipStyle = function(feature){
-  var highCrime = feature.getProperty('zipCode');
-  var color = highCrime == 97201 ? 'red' : 'blue';
-  return{
-    fillColor: color,
-    strokeWeight: 2
-  };
+Map.showbikeLayer = function(){
+  var bikeLayer = new google.maps.BicyclingLayer();
+  bikeLayer.setMap(map);
+};
+Map.showHeatMap = function() {
+  var heatmap = new google.maps.visualization.HeatmapLayer({
+    data: heatmapData,
+    map: map
+  });
 };
 
 if(navigator.geolocation){
@@ -51,17 +53,16 @@ Map.initMap= function() {
     }
   }
   );
-  //map.data.loadGeoJson('data/zipcodes.json');
-  Map.loadZipJson();
+  //Map.loadZipJson();
   //Map.loadParkingJson();
-  var bikeLayer = new google.maps.BicyclingLayer();
-  bikeLayer.setMap(map);
-  Map.setZipStyle(feature);
+  //Map.showbikeLayer();
+  Map.showHeatMap();
+  //Map.setZipStyle(feature);
 
-  var heatmap = new google.maps.visualization.HeatmapLayer({
-    data: heatmapData(),
-    map: map
-  });
+  // var heatmap = new google.maps.visualization.HeatmapLayer({
+  //   data: heatmapData(),
+  //   map: map
+  // });
 };
 
   // map.data.setStyle(function(feature){
