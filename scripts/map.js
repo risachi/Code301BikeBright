@@ -70,6 +70,17 @@ Map.initMap= function() {
   Map.showHeatMap();
   //Map.setZipStyle(arrayName);
 };
+function defaultMapView(){
+    Map.defaultMap();
+};
+function parkingMapVIew(){
+  Map.defaultMap();
+  Map.loadParkingJson();
+};
+function zipMapView(){
+  Map.defaultMap();
+  Map.loadZipJson();
+}
 
   // map.data.setStyle(function(feature){
   //   var highCrime = feature.getProperty('zipCode');
