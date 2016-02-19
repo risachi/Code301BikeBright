@@ -1,8 +1,9 @@
-var defaultMapOptions = {
-
-};
-var otherMapOptions = {
-
-};
-
-heatMapData = [];
+// function defaultMap() = {
+//
+// };
+// function parkingMap() = {
+//
+// };
+//
+// function
+// heatMapData = [];
