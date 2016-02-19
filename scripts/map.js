@@ -30,6 +30,29 @@ Map.showHeatMap = function() {
 Map.setZipStyle = function(feature){
   var highCrime = feature.getProperty('zipCode');
 };
+
+Map.getCurrentLocation = function (){
+  if(navigator.geolocation){
+    function error(err){
+        console.log("error loading users geolocation" + err.code + ": "
+        + err.message);
+    }
+    function success(pos) {
+      userCoords = pos.coords;
+      //console.log("lat: " + userCoords.latitude + ", long: " + userCoords.longitude);
+      /*** Put down a marker on the current location ***/
+      var marker = new google.maps.Marker({
+        position: {lat: userCoords.latitude, lng: userCoords.longitude},
+        map: map
+        //icon: {path: google.maps.SymbolPath.CIRCLE, scale: 5}
+      });
+    }
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else {
+    console.log("geolocation is not supported in this browser");
+  }
+};
+
 Map.defaultMap = function(){
   map = new google.maps.Map(document.getElementById('map'),
   {center: portlandCenter,
@@ -48,19 +71,6 @@ Map.defaultMap = function(){
   );
 };
 
-if(navigator.geolocation){
-  function error(err){
-      console.log("error loading users geolocation" + err.code + ": "
-      + err.message);
-  }
-  function success(pos) {
-    userCoords = pos.coords;
-    console.log("lat: " + userCoords.latitude + ", long: " + userCoords.longitude);
-  }
-  navigator.geolocation.getCurrentPosition(success, error);
-} else {
-  console.log("geolocation is not supported in this browser");
-}
 
 // Map.initMap= function() {
 //   Map.defaultMap();
