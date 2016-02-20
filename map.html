@@ -2,37 +2,101 @@
 <!-- Usage notes
 1) I have all the styles/scripts inline currently, so the code that applies to the map is all in the same place. Once we have have everything in place, I plan to move these to seperate CSS/JS files.
 2) You'll need to replace the async defer call to google maps with the actual API key. -->
-  <html lang="en">
-    <head>
-      <meta charset="utf-8"/>
-      <title>Scaffolding Site</title>
-      <link rel="stylesheet" href="styles/base.css">
-      <link rel="stylesheet" href="styles/layout.css">
-      <link rel="stylesheet" href="styles/modules.css">
-      <link rel="stylesheet" href="styles/state.css">
-      <meta name="viewport" content="width=device-width">
-      <!-- Map specific styles here -->
-      <style type="text/css">
-        html, body { height: 100%; margin: 0; padding: 0; }
-        #map { height: 70%; width: 70%; }
-      </style>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Scaffolding Site</title>
+  <link rel="stylesheet" href="/scripts/icon/font-awesome/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Satisfy|Raleway:400,600|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
+  <link rel="stylesheet" href="styles/state.css">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="scripts/icon/bicycle.ico" type="image/x-icon">
+  <!-- Map specific styles here -->
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      height: 70%;
+      width: 70%;
+    }
+  </style>
+  <script src="scripts/map.js"></script>
+
+</head>
+
+<body>
+  <div class="title">
+    <div class="logo">
+      <h1>Bike</h1>
+      <h2>Bright</h2>
+    </div>
+    <div class="main-nav">
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="map.html">MAP</a>
+        <a href="discuss.html">DISCUSS</a>
+      </nav>
+    </div>
+  </div>
 
 
-    </head>
-    <body>
-      <div>
-        <h1>Title</h1>
-        <p>Form placeholder.</p>
-      </div>
+  <div>
+    <h1>Title</h1>
+    <p>Form placeholder.</p>
+  </div>
 
-      <div id="control">
-        <h2>Find A Place to Lock Your Bike</h2>
-        <p>To find the best place to lock your bike, select one of the options below.</p>
+  <div id="control">
+    <h2>Find A Place to Lock Your Bike</h2>
+    <p>To find the best place to lock your bike, just choose one of the options below.</p>
 
+    <form action="" method="get" id="chooseLockType">
+      <input id="address-input" class="controls" type="text" placeholder="Enter a location">
 
+      <br><p>Bicycle Lock Type:
+        <input type="checkbox" value="staple">Staple<br>
+        <input type="checkbox" value="ribbon">Ribbon<br>
+        <input type="checkbox" value="stnles">Stainless<br>
+        <input type="checkbox" value="art">Art<br>
+        <input type="checkbox" value="cora">Cora<br>
+        <input type="checkbox" value="cshare">Cshare<br>
+        <input type="checkbox" value="hoop">Hoop<br>
+        <input type="checkbox" value="sellwd">Sellwood<br>
+        <input type="checkbox" value="whlock">Whlock<br>
+        <input type="checkbox" value="unk">Unk<br>
+        <input type="checkbox" value="indoor">Indoor<br>
+
+      <br><p>Covered Parking:
+      <select name='covered'>
+        <option value='y'>Yes</option>
+        <option value='n'>No</option>
+        <option value='u'>U</option>
+      </select>
+
+      <br>
+        <input type="checkbox" name="video" value="Video Surveillance" />video surveillance
+
+      <button type="submit" id="currentLocation" class="usersLocation">Use Current Location</button>
+      <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+  </form>
+  </div>
+  <div id="map"></div>
+  <!-- <script type="text/javascript">
         <input id="address-input" class="controls" type="text" placeholder="Enter a location">
         <br />
-        <button onclick="Map.getCurrentLocation()">Current Location</button> <span id="loading">Loading...</span>
+        <button onclick="Map.getCurrentLocation()">Current Location</button>
         <br />
         <button >Show Crime</button>
         <br />
@@ -52,16 +116,41 @@
         }
       window.addEventListener('resize', initalize);
       </script> -->
-<!-- window.addEventListener('resize', initalize); -->
-<script src="/data/heatmapData.js"></script>
-<!-- <script src="data/model/heatMapFeature.js"></script> -->
-<script src="scripts/vendor/jquery-1.11.3.js"></script>
-<script src="scripts/vendor/handlebars-v4.0.5.js"></script>
-<script src="scripts/model/map.js"></script>
-<script src="scripts/view/mapView.js"></script>
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=Map.initMap">
-</script>
+  <!-- window.addEventListener( 'resize', initalize); -->
 
-    </body>
-  </html>
+  <footer>
+    <div>
+      <nav id="footer-nav">
+        <a href="index.html">HOME</a>
+        <a href="">ABOUT</a>
+        <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-bicycle fa-stack-1x fa-inverse"></i>
+        </span>
+        <a href="map.html">MAP</a>
+        <a href="discuss.html">DISCUSS</a>
+      </nav>
+    </div>
+    <div class="social-icons">
+      <span class="custom-social">
+        <span class="fa fa-facebook social-brand"></span>
+      </span>
+      <span class="custom-social">
+        <span class="fa fa-twitter social-brand"></span>
+      </span>
+      <span class="custom-social">
+        <span class="fa fa-instagram social-brand"></span>
+      </span>
+      <span class="custom-social">
+        <span class="fa fa-github social-brand"></span>
+      </span>
+    </div>
+    <script src="data/heatmapData.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=initMap">
+    </script>
+    <script src="scripts/vendor/jquery-1.11.3.js"></script>
+    <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+  </footer>
+</body>
+
+</html>
