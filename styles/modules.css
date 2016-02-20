@@ -299,3 +299,8 @@ margin-bottom: 40px;
   padding: 10px;
   text-align: center;
 }
+
+/* Map Page */
+#loading {
+  display: none;
+}
