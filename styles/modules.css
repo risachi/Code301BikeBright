@@ -66,6 +66,10 @@ p.m-posteddate{
   padding-top: 20px;
 }
 
+#blueTitle {
+    background-color: #181B34;
+}
+
 .title h1 {
 display: flex;
 text-transform: uppercase;
