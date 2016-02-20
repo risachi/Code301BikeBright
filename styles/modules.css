@@ -128,6 +128,21 @@ font-size: 20px;
 	width: 100%;
 	background: #181B34;
 }
+.title-subline {
+  position: absolute;
+  left: 50px;
+}
+.title-subline h1 {
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-size: 72px;
+  color: #fff;
+}
+.title-subline h2 {
+  font-family: satisfy;
+  color: #181b34;
+  font-size: 36px;
+}
 /*What we are/who we are section*/
 .section-content {
   margin: 0 auto;
