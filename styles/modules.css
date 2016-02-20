@@ -144,6 +144,9 @@ font-size: 20px;
   font-family: satisfy;
   color: #181b34;
   font-size: 48px;
+  position: absolute;
+  top: 90px;
+  left: 20px;
 }
 /*What we are/who we are section*/
 .section-content {
