@@ -34,24 +34,22 @@ Map.setZipStyle = function(feature){
 Map.getCurrentLocation = function (){
   if(navigator.geolocation){
     function error(err){
+        alert('unable to locate current location');
         console.log("error loading users geolocation" + err.code + ": "
         + err.message);
     }
     function success(pos) {
       userCoords = pos.coords;
       var currentLocation = {lat: userCoords.latitude, lng: userCoords.longitude};
-      //console.log("lat: " + userCoords.latitude + ", long: " + userCoords.longitude);
       map.setCenter(currentLocation);
       map.setZoom(17);
       /* Clear out address input field if a location was already added */
       (document.getElementById('address-input')).value = '';
-      /*** Put down a marker on the current location ***/
-      // var marker = new google.maps.Marker({
-      //   position: {lat: userCoords.latitude, lng: userCoords.longitude},
-      //   map: map
-      //   //icon: {path: google.maps.SymbolPath.CIRCLE, scale: 5}
-      // });
+      /* Hides loading indicator */
+      $('#loading').css('display', 'none');
     }
+    /* Displays loading indicator */
+    $('#loading').css('display', 'inline');
     navigator.geolocation.getCurrentPosition(success, error);
   } else {
     console.log("geolocation is not supported in this browser");
