@@ -58,7 +58,7 @@ Map.getCurrentLocation = function (){
   }
 };
 
-Map.defaultMap = function(){
+Map.setDefaultMap = function(){
   map = new google.maps.Map(document.getElementById('map'),
   {center: portlandCenter,
   zoom: 10,
@@ -78,23 +78,16 @@ Map.defaultMap = function(){
 };
 
 
-// Map.initMap= function() {
-//   Map.defaultMap();
-//   Map.loadZipJson();
-//   Map.loadParkingJson();
-//   Map.showBikeLayer();
-//   Map.showHeatMap();
-//   //Map.setZipStyle(arrayName);
-// };
 function defaultMapView(){
   Map.initMap= function() {
-    Map.defaultMap();
+    Map.setDefaultMap();
   };
 };
 defaultMapView();
+
 function parkingMapView(){
   Map.initMap= function() {
-    Map.defaultMap();
+    Map.setDefaultMap();
     Map.loadParkingJson();
   };
 };
@@ -102,7 +95,7 @@ function parkingMapView(){
 
 function zipMapView(){
   Map.initMap= function() {
-    Map.defaultMap();
+    Map.setDefaultMap();
     Map.loadZipJson();
 
   };
