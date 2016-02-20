@@ -40,9 +40,11 @@ Map.getCurrentLocation = function (){
     function success(pos) {
       userCoords = pos.coords;
       var currentLocation = {lat: userCoords.latitude, lng: userCoords.longitude};
-      console.log("lat: " + userCoords.latitude + ", long: " + userCoords.longitude);
+      //console.log("lat: " + userCoords.latitude + ", long: " + userCoords.longitude);
       map.setCenter(currentLocation);
       map.setZoom(17);
+      /* Clear out address input field if a location was already added */
+      (document.getElementById('address-input')).value = '';
       /*** Put down a marker on the current location ***/
       // var marker = new google.maps.Marker({
       //   position: {lat: userCoords.latitude, lng: userCoords.longitude},
@@ -159,6 +161,8 @@ Map.addressBarInput = function(){
     } else {
       map.setCenter(place.geometry.location);
       map.setZoom(17);
+      /* Clear out address input field if a location was already added */
+      (document.getElementById('address-input')).value = '';
     }
     //marker.setPosition(place.geometry.location);
     //marker.setVisible(true);
