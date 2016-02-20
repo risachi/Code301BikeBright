@@ -62,20 +62,13 @@ if(navigator.geolocation){
   console.log("geolocation is not supported in this browser");
 }
 
-// Map.initMap= function() {
-//   Map.defaultMap();
-//   Map.loadZipJson();
-//   Map.loadParkingJson();
-//   Map.showBikeLayer();
-//   Map.showHeatMap();
-//   //Map.setZipStyle(arrayName);
-// };
 function defaultMapView(){
   Map.initMap= function() {
     Map.defaultMap();
   };
 };
 defaultMapView();
+
 function parkingMapView(){
   Map.initMap= function() {
     Map.defaultMap();
