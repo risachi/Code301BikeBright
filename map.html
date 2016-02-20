@@ -20,7 +20,7 @@
       margin: 0;
       padding: 0;
     }
-    
+
     #map {
       height: 70%;
       width: 70%;
@@ -31,6 +31,22 @@
 </head>
 
 <body>
+  <div class="title">
+    <div class="logo">
+      <h1>Bike</h1>
+      <h2>Bright</h2>
+    </div>
+    <div class="main-nav">
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="map.html">MAP</a>
+        <a href="discuss.html">DISCUSS</a>
+      </nav>
+    </div>
+  </div>
+
+
   <div>
     <h1>Title</h1>
     <p>Form placeholder.</p>
@@ -71,11 +87,26 @@
       window.addEventListener('resize', initalize);
       </script> -->
   <!-- window.addEventListener('resize', initalize); -->
-  <script src="data/heatmapData.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=initMap">
-  </script>
-  <script src="scripts/vendor/jquery-1.11.3.js"></script>
-  <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+
+  <footer>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="">ABOUT</a>
+      <a href="maps.html">MAP</a>
+      <a href="discuss.html">DISCUSS</a>
+    </nav>
+    <div class="social-icons">
+      <a>facebook</a>
+      <a>twitter</a>
+      <a>instagram</a>
+      <a>github</a>
+    </div>
+    <script src="data/heatmapData.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=initMap">
+    </script>
+    <script src="scripts/vendor/jquery-1.11.3.js"></script>
+    <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+  </footer>
 </body>
 
 </html>
