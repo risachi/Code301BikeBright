@@ -32,12 +32,10 @@ Map.setZipStyle = function(feature){
 };
 
 Map.getCurrentLocation = function (){
-  if(navigator.geolocation){
-    function error(err){
-        alert('unable to locate current location');
-        console.log("error loading users geolocation" + err.code + ": "
-        + err.message);
-    }
+  /* Displays loading indicator */
+  $('#loading').css('display', 'inline');
+  navigator.geolocation.getCurrentPosition(success, error);
+
     function success(pos) {
       userCoords = pos.coords;
       var currentLocation = {lat: userCoords.latitude, lng: userCoords.longitude};
@@ -48,12 +46,12 @@ Map.getCurrentLocation = function (){
       /* Hides loading indicator */
       $('#loading').css('display', 'none');
     }
-    /* Displays loading indicator */
-    $('#loading').css('display', 'inline');
-    navigator.geolocation.getCurrentPosition(success, error);
-  } else {
-    console.log("geolocation is not supported in this browser");
-  }
+
+    function error(err){
+        alert('unable to find current location');
+        console.log("error loading users geolocation" + err.code + ": "
+        + err.message);
+    }
 };
 
 Map.setDefaultMap = function(){
