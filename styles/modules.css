@@ -68,10 +68,10 @@ p.m-posteddate{
 
 .title h1 {
 display: flex;
-text-transform: capitalize;
+text-transform: uppercase;
 font-family: Raleway-SemiBold;
 color: #fff;
-font-size: 36px;
+font-size: 46px;
 letter-spacing: 0.08px;
 line-height: 42px;
 }
@@ -80,9 +80,7 @@ display: flex;
 font-family: Satisfy;
 color: #DAFC38;
 padding-left: 10px;
-font-size: 17.92px;
-letter-spacing: 0.03px;
-line-height: 26px;
+font-size: 20px;
 }
 
 .main-nav {
@@ -98,6 +96,7 @@ line-height: 26px;
 }
 
 .main-nav nav a {
+  font-family: Raleway;
   text-decoration: none;
   color: #fff;
 }
@@ -252,4 +251,51 @@ margin-bottom: 40px;
   width: 400px;
   height: 300px;
   background-color: #ccc;
+}
+
+/*Footer Section*/
+#footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  margin-top: 20px;
+}
+#footer-nav a{
+  margin: 0 20px 0 20px;
+  font-family: Raleway;
+  color: #181B34;
+  text-decoration: none;
+}
+.fa-circle {
+  color: #181B34
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.custom-social {
+    display: flex;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: #181B34;
+    margin: 0 20px 0 20px;
+}
+.social-brand {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.bottom-footer p {
+  font-family: OpenSans;
+  font-size: 13.49px;
+  color: #181B34;
+  letter-spacing: 0.5px;
+  line-height: 33px;
+  padding: 10px;
+  text-align: center;
 }

@@ -2,6 +2,7 @@
 <!-- Usage notes
 1) I have all the styles/scripts inline currently, so the code that applies to the map is all in the same place. Once we have have everything in place, I plan to move these to seperate CSS/JS files.
 2) You'll need to replace the async defer call to google maps with the actual API key. -->
+
 <html lang="en">
 
 <head>
@@ -20,7 +21,7 @@
       margin: 0;
       padding: 0;
     }
-
+    
     #map {
       height: 70%;
       width: 70%;
@@ -77,6 +78,19 @@
   </div>
   <div id="map"></div>
   <!-- <script type="text/javascript">
+        <input id="address-input" class="controls" type="text" placeholder="Enter a location">
+        <br />
+        <button onclick="Map.getCurrentLocation()">Current Location</button>
+        <br />
+        <button >Show Crime</button>
+        <br />
+        <button >Show Parking</button>
+          <div class="clear"></div>
+      </div>
+          <div class="clear"></div>
+      </div>
+      <div id="map"></div>
+      <!-- <script type="text/javascript">
           map.data.setStyle({
             fillColor: 'grey',
             fillOpacity: 0.2,
@@ -86,7 +100,7 @@
         }
       window.addEventListener('resize', initalize);
       </script> -->
-  <!-- window.addEventListener('resize', initalize); -->
+  <!-- window.addEventListener( 'resize', initalize); -->
 
   <footer>
     <nav>

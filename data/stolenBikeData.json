@@ -1,5 +1,4 @@
-{
-    "bikes": [
+[
         {
             "id": 51055,
             "title": "1975 Schwinn suburban",
@@ -431,4 +430,3 @@
             "date_stolen": 1436225584
         }
     ]
-}
