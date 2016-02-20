@@ -49,3 +49,265 @@ margin-right: .5rem;
 p.m-posteddate{
   color: rgba(128, 128, 128, 0.55);
 }
+
+/* TOP NAVIGATION*/
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: 90px;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+  padding-top: 20px;
+}
+
+#blueTitle {
+    background-color: #181B34;
+}
+
+.title h1 {
+display: flex;
+text-transform: uppercase;
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+color: #fff;
+font-size: 46px;
+letter-spacing: 0.08px;
+line-height: 42px;
+}
+.title h2 {
+display: flex;
+font-family: 'Satisfy', cursive;
+color: #DAFC38;
+padding-left: 10px;
+font-size: 20px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 90px;
+}
+
+.main-nav nav {
+  justify-content: space-around;
+  display: flex;
+  width: 400px;
+}
+
+.main-nav nav a {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*What we are/who we are section*/
+.section-content {
+  margin: 0 auto;
+  max-width: 70%;
+  text-align: center;
+}
+
+.section-content h1 {
+  /* WHAT WE ARE: */
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+font-size: 64px;
+color: #FFFFFF;
+letter-spacing: 25.18px;
+line-height: 85px;
+text-align: center;
+text-transform: uppercase;
+}
+
+.section-content hr {
+  /* Line: */
+border: 1px solid #181B34;
+width: 70%;
+margin-top: -40px;
+margin-bottom: 40px;
+}
+.section-content p {
+font-family: 'Open Sans', sans-serif;
+font-size: 13.49px;
+color: #666666;
+letter-spacing: 0.5px;
+line-height: 33px;
+}
+
+/*LINKS SECTION*/
+.links {
+  display: flex;
+  flex-direction: row;
+}
+.links div {
+  width: 50%;
+  height: 450px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  color: #FFFFFF;
+  letter-spacing: 20px;
+  line-height: 85px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.links div p {
+  margin: 0;
+}
+.map {
+  background:linear-gradient(rgba(24, 26, 52, 0.6),rgba(24, 26, 52, 0.6)),url("/img/single-bike.jpg");
+  background-size: cover;
+}
+.discuss {
+  background:linear-gradient(rgba(218,252,56,0.4),rgba(218,252,56,0.4)),url("/img/lady-bicycle.jpg");
+  background-size: cover;
+}
+
+/*profile section*/
+#profiles {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  justify-content: space-around;
+}
+.profile-photo {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+  border:
+}
+.profile-photo img{
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.profile-photo p {
+font-family: 'Open Sans', sans-serif;
+font-size: 13.49px;
+color: #666666;
+letter-spacing: 0.5px;
+line-height: 33px;
+padding: 10px;
+}
+.profile-photo h3 {
+  font-family: 'Satisfy', cursive;
+  color: #181B34;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 0;
+}
+/*Contact Us Section*/
+#contact-us {
+  background-color: #181B34;
+  max-width: 100%;
+  padding-bottom: 30px;
+}
+#contact-us hr {
+border: 1px solid #FFFFFF;
+width: 70%;
+margin-top: -40px;
+margin-bottom: 40px;
+}
+#contact-section {
+  display: flex;
+  justify-content: space-around;
+}
+.contact-background {
+  background-color: #fff;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 30px 0;
+  margin-left: 50px;
+}
+#contact_form {
+  margin: 0;
+}
+.input {
+  display: flex;
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
+}
+#message {
+  height: 200px;
+}
+#submit_button {
+  display: block;
+  width: 305px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  color: #fff;
+  background-color: #d8d8d8;
+}
+#home-map {
+  width: 400px;
+  height: 300px;
+  background-color: #ccc;
+}
+
+/*Footer Section*/
+#footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  margin-top: 20px;
+}
+#footer-nav a{
+  margin: 0 20px 0 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #181B34;
+  text-decoration: none;
+}
+.fa-circle {
+  color: #181B34
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.custom-social {
+    display: flex;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: #181B34;
+    margin: 0 20px 0 20px;
+}
+.social-brand {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.bottom-footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.49px;
+  color: #181B34;
+  letter-spacing: 0.5px;
+  line-height: 33px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Map Page */
+#loading {
+  display: none;
+}
