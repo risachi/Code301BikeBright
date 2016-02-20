@@ -69,7 +69,7 @@ p.m-posteddate{
 .title h1 {
 display: flex;
 text-transform: uppercase;
-font-family: Raleway;
+font-family: 'Raleway', sans-serif;
 font-weight: 600;
 color: #fff;
 font-size: 46px;
@@ -78,7 +78,7 @@ line-height: 42px;
 }
 .title h2 {
 display: flex;
-font-family: Satisfy;
+font-family: 'Satisfy', cursive;
 color: #DAFC38;
 padding-left: 10px;
 font-size: 20px;
@@ -101,7 +101,7 @@ font-size: 20px;
 }
 
 .main-nav nav a {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: #fff;
 }
@@ -157,7 +157,7 @@ font-size: 20px;
 
 .section-content h1 {
   /* WHAT WE ARE: */
-font-family: Raleway;
+font-family: 'Raleway', sans-serif;
 font-weight: 600;
 font-size: 64px;
 color: #FFFFFF;
@@ -175,7 +175,7 @@ margin-top: -40px;
 margin-bottom: 40px;
 }
 .section-content p {
-font-family: OpenSans;
+font-family: 'Open Sans', sans-serif;
 font-size: 13.49px;
 color: #666666;
 letter-spacing: 0.5px;
@@ -190,7 +190,7 @@ line-height: 33px;
 .links div {
   width: 50%;
   height: 450px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 64px;
   color: #FFFFFF;
@@ -236,7 +236,7 @@ line-height: 33px;
   border-radius: 50%;
 }
 .profile-photo p {
-font-family: OpenSans;
+font-family: 'Open Sans', sans-serif;
 font-size: 13.49px;
 color: #666666;
 letter-spacing: 0.5px;
@@ -244,7 +244,7 @@ line-height: 33px;
 padding: 10px;
 }
 .profile-photo h3 {
-  font-family: satisfy;
+  font-family: 'Satisfy', cursive;
   color: #181B34;
   font-size: 26px;
   text-align: center;
@@ -291,7 +291,7 @@ margin-bottom: 40px;
   width: 305px;
   height: 50px;
   border-radius: 4px;
-  font-family: raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   color: #fff;
   background-color: #d8d8d8;
@@ -312,7 +312,7 @@ margin-bottom: 40px;
 }
 #footer-nav a{
   margin: 0 20px 0 20px;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   color: #181B34;
   text-decoration: none;
 }
@@ -340,11 +340,16 @@ margin-bottom: 40px;
   align-items: center;
 }
 .bottom-footer p {
-  font-family: OpenSans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13.49px;
   color: #181B34;
   letter-spacing: 0.5px;
   line-height: 33px;
   padding: 10px;
   text-align: center;
+}
+
+/* Map Page */
+#loading {
+  display: none;
 }

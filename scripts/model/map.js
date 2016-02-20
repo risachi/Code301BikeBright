@@ -34,26 +34,29 @@ Map.setZipStyle = function(feature){
 Map.getCurrentLocation = function (){
   if(navigator.geolocation){
     function error(err){
+        alert('unable to locate current location');
         console.log("error loading users geolocation" + err.code + ": "
         + err.message);
     }
     function success(pos) {
       userCoords = pos.coords;
-      //console.log("lat: " + userCoords.latitude + ", long: " + userCoords.longitude);
-      /*** Put down a marker on the current location ***/
-      var marker = new google.maps.Marker({
-        position: {lat: userCoords.latitude, lng: userCoords.longitude},
-        map: map
-        //icon: {path: google.maps.SymbolPath.CIRCLE, scale: 5}
-      });
+      var currentLocation = {lat: userCoords.latitude, lng: userCoords.longitude};
+      map.setCenter(currentLocation);
+      map.setZoom(17);
+      /* Clear out address input field if a location was already added */
+      (document.getElementById('address-input')).value = '';
+      /* Hides loading indicator */
+      $('#loading').css('display', 'none');
     }
+    /* Displays loading indicator */
+    $('#loading').css('display', 'inline');
     navigator.geolocation.getCurrentPosition(success, error);
   } else {
     console.log("geolocation is not supported in this browser");
   }
 };
 
-Map.defaultMap = function(){
+Map.setDefaultMap = function(){
   map = new google.maps.Map(document.getElementById('map'),
   {center: portlandCenter,
   zoom: 10,
@@ -72,37 +75,6 @@ Map.defaultMap = function(){
   Map.addressBarInput();
 };
 
-
-// Map.initMap= function() {
-//   Map.defaultMap();
-//   Map.loadZipJson();
-//   Map.loadParkingJson();
-//   Map.showBikeLayer();
-//   Map.showHeatMap();
-//   //Map.setZipStyle(arrayName);
-// };
-function defaultMapView(){
-  Map.initMap= function() {
-    Map.defaultMap();
-  };
-};
-defaultMapView();
-function parkingMapView(){
-  Map.initMap= function() {
-    Map.defaultMap();
-    Map.loadParkingJson();
-  };
-};
-//parkingMapView();
-
-function zipMapView(){
-  Map.initMap= function() {
-    Map.defaultMap();
-    Map.loadZipJson();
-
-  };
-}
-//zipMapView();
 
   // map.data.setStyle(function(feature){
   //   var highCrime = feature.getProperty('zipCode');
@@ -156,6 +128,8 @@ Map.addressBarInput = function(){
     } else {
       map.setCenter(place.geometry.location);
       map.setZoom(17);
+      /* Clear out address input field if a location was already added */
+      (document.getElementById('address-input')).value = '';
     }
     //marker.setPosition(place.geometry.location);
     //marker.setVisible(true);
