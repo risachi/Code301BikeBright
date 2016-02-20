@@ -82,7 +82,11 @@ color: #DAFC38;
 padding-left: 10px;
 font-size: 20px;
 }
-
+.title-line {
+  border: 1px solid #DAFC38;
+  width: 90%;
+  margin-top: -10px;
+}
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -101,6 +105,29 @@ font-size: 20px;
   color: #fff;
 }
 
+.nav-line {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+  color: #ddd;
+}
+.nav-line:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.nav-line:hover {
+  color: #DAFC38;
+  cursor: pointer;
+}
+.nav-line:hover:after {
+	width: 100%;
+	background: #181B34;
+}
 /*What we are/who we are section*/
 .section-content {
   margin: 0 auto;
