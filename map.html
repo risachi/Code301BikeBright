@@ -53,10 +53,9 @@
     <h2>Find A Place to Lock Your Bike</h2>
     <p>To find the best place to lock your bike, just choose one of the options below.</p>
 
-    <button onclick="Map.getCurrentLocation()">Use Current Location</button><span id="loading">Loading...</span>
-    <form action="" method="get" id="chooseLockType">
+    <div id="form">
       <p><input id="address-input" class="controls" type="text" placeholder="Enter Location">
-
+      <button onclick="Map.getCurrentLocation()">Use Current Location</button><span id="loading">Loading...</span>
 
       <p>Bicycle Lock Type:
         <input type="checkbox" value="staple">Staple<br>
@@ -83,7 +82,7 @@
 
       <br>
         <div class="clear"></div>
-    </form>
+    </div>
   </div>
   <div id="map"></div>
   <!-- <script type="text/javascript">
