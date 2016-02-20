@@ -69,7 +69,8 @@ p.m-posteddate{
 .title h1 {
 display: flex;
 text-transform: uppercase;
-font-family: Raleway-SemiBold;
+font-family: Raleway;
+font-weight: 600;
 color: #fff;
 font-size: 46px;
 letter-spacing: 0.08px;
@@ -130,7 +131,8 @@ font-size: 20px;
 }
 .title-subline {
   position: absolute;
-  left: 50px;
+  left: 200px;
+  top: 250px;
 }
 .title-subline h1 {
   font-family: Raleway;
@@ -141,7 +143,7 @@ font-size: 20px;
 .title-subline h2 {
   font-family: satisfy;
   color: #181b34;
-  font-size: 36px;
+  font-size: 48px;
 }
 /*What we are/who we are section*/
 .section-content {
@@ -152,7 +154,8 @@ font-size: 20px;
 
 .section-content h1 {
   /* WHAT WE ARE: */
-font-family: Raleway-Bold;
+font-family: Raleway;
+font-weight: 600;
 font-size: 64px;
 color: #FFFFFF;
 letter-spacing: 25.18px;
@@ -184,7 +187,8 @@ line-height: 33px;
 .links div {
   width: 50%;
   height: 450px;
-  font-family: Raleway-Bold;
+  font-family: Raleway;
+  font-weight: 600;
   font-size: 64px;
   color: #FFFFFF;
   letter-spacing: 20px;
