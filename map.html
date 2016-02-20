@@ -51,19 +51,13 @@
   </div>
 
 
-  <div>
-    <h1>Title</h1>
-    <p>Form placeholder.</p>
-  </div>
-
   <div id="control">
     <h2>Find A Place to Lock Your Bike</h2>
     <p>To find the best place to lock your bike, just choose one of the options below.</p>
 
     <form action="" method="get" id="chooseLockType">
-      <input id="address-input" class="controls" type="text" placeholder="Enter a location">
+      <p>Enter a zipcode: <input id="address-input" class="controls" type="text" placeholder="e.g. 90210">
 
-      <br>
       <p>Bicycle Lock Type:
         <input type="checkbox" value="staple">Staple<br>
         <input type="checkbox" value="ribbon">Ribbon<br>
@@ -77,7 +71,6 @@
         <input type="checkbox" value="unk">Unk<br>
         <input type="checkbox" value="indoor">Indoor<br>
 
-      <br>
       <p>Covered Parking:
         <select name='covered'>
           <option value='y'>Yes</option>
@@ -88,6 +81,7 @@
       <br>
         <input type="checkbox" name="video" value="Video Surveillance" />video surveillance
 
+      <br>
         <button type="submit" id="currentLocation" class="usersLocation">Use Current Location</button>
         <div class="clear"></div>
     </form>
