@@ -78,30 +78,6 @@ Map.setDefaultMap = function(){
 };
 
 
-function defaultMapView(){
-  Map.initMap= function() {
-    Map.setDefaultMap();
-  };
-};
-defaultMapView();
-
-function parkingMapView(){
-  Map.initMap= function() {
-    Map.setDefaultMap();
-    Map.loadParkingJson();
-  };
-};
-//parkingMapView();
-
-function zipMapView(){
-  Map.initMap= function() {
-    Map.setDefaultMap();
-    Map.loadZipJson();
-
-  };
-}
-//zipMapView();
-
   // map.data.setStyle(function(feature){
   //   var highCrime = feature.getProperty('zipCode');
   //   var color = highCrime == 97201 ? 'red' : 'blue';
