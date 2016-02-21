@@ -1,6 +1,7 @@
 (function(module){
 var Map= {};
 var map;
+var parkingMarkers;
 var infowindow = null;
 var pos;
 var userCoords;
@@ -12,13 +13,17 @@ Map.loadZipJson = function(){
 };
 
 Map.loadParkingJson = function(){
-  map.data.loadGeoJson('/data/Bicycle_Parking_pdx.geojson');
+  parkingMarkers = new google.maps.Data();
+  parkingMarkers.loadGeoJson('/data/Bicycle_Parking_pdx.geojson');
+  parkingMarkers.setMap(map);
+  //map.data.loadGeoJson('/data/Bicycle_Parking_pdx.geojson');
 };
 
 Map.removeParkingJson = function(){
-  map.data.forEach(function(feature) {
-    map.data.remove(feature);
-  });
+  // map.data.forEach(function(feature) {
+  //   map.data.remove(feature);
+  // });
+  parkingMarkers.setMap(null);
 };
 
 Map.showBikeLayer = function(){
