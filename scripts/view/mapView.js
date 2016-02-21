@@ -8,9 +8,21 @@
     };
   };
 
-  mapView.handleParkingFilter = function(){
-
+  mapView.handleMapOptions = function(){
+    /* Current Location Button */
+    $('#current-location').on('click', Map.getCurrentLocation);
+    /* Show Parking Checkbox */
+    $('#parking').on('change', function(){
+      if(this.checked){
+        console.log('this is checked');
+      }
+      else {
+        console.log('this is unchecked');
+      }
+    });
   };
+
+  mapView.handleMapOptions();
 // mapView.defaultMapView();
 
 // mapView.parkingMapView= function(){
