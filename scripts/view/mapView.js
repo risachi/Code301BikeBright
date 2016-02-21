@@ -14,10 +14,11 @@
     /* Show Parking Checkbox */
     $('#parking').on('change', function(){
       if(this.checked){
-        console.log('this is checked');
+        console.log('parking is checked');
+        Map.loadParkingJson();
       }
       else {
-        console.log('this is unchecked');
+        console.log('parking is unchecked');
       }
     });
   };
