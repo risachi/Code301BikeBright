@@ -7,6 +7,10 @@
       Map.setDefaultMap();
     };
   };
+
+  mapView.handleParkingFilter = function(){
+
+  };
 // mapView.defaultMapView();
 
 // mapView.parkingMapView= function(){
