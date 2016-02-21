@@ -15,6 +15,12 @@ Map.loadParkingJson = function(){
   map.data.loadGeoJson('/data/Bicycle_Parking_pdx.geojson');
 };
 
+Map.removeParkingJson = function(){
+  map.data.forEach(function(feature) {
+    map.data.remove(feature);
+  });
+};
+
 Map.showBikeLayer = function(){
   var bikeLayer = new google.maps.BicyclingLayer();
   bikeLayer.setMap(map);

@@ -19,6 +19,7 @@
       }
       else {
         console.log('parking is unchecked');
+        Map.removeParkingJson();
       }
     });
   };
