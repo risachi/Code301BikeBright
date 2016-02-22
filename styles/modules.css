@@ -313,6 +313,7 @@ margin-bottom: 40px;
 #footer-nav a{
   margin: 0 20px 0 20px;
   font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
   color: #181B34;
   text-decoration: none;
 }
@@ -361,4 +362,34 @@ margin-bottom: 40px;
   margin-top: 20px;
   padding: 10px;
   background-color: #fff;
+}
+@media screen and (max-width: 800px) {
+  .title {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .main-nav {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+
+  .logo {
+    margin: 0 auto;
+  }
+  .main-nav nav {
+    width: 300px;
+  }
+  .main-nav nav a {
+    font-size: 3vw;
+  }
+  .title-subline {
+    display: none;
+  }
+  #footer-nav a {
+    font-size: 3vw;
+  }
 }
