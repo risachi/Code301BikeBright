@@ -195,8 +195,6 @@ line-height: 33px;
   font-size: 64px;
   color: #FFFFFF;
   letter-spacing: 20px;
-  line-height: 85px;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center
@@ -374,9 +372,15 @@ margin-bottom: 40px;
   .main-nav {
     margin: 0 auto;
   }
+  .title-line {
+    margin-top: 10px;
+  }
 }
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 799px) {
+  header {
+    height: 300px;
+    min-height: 0vh;
+  }
   .logo {
     margin: 0 auto;
   }
@@ -388,6 +392,49 @@ margin-bottom: 40px;
   }
   .title-subline {
     display: none;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .links div {
+    width: 100%
+  }
+  #profiles {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .profile-photo {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .profile-photo img {
+    width: 100px;
+    height: 100px;
+  }
+  .section-content h1 {
+    font-size: 5vw;
+    letter-spacing: 10px;
+    line-height: 40px;
+  }
+  .section-content hr {
+    margin-top: 0;
+  }
+  #contact-section {
+    flex-direction: column;
+  }
+  .contact-background {
+    margin: 0;
+    width: 100%;
+  }
+  #contact-us hr {
+    margin-top: 0;
+  }
+  .map-section {
+    width: 100%
+  }
+  #home-map {
+    width: 100%;
+    height: 300px;
   }
   #footer-nav a {
     font-size: 3vw;
