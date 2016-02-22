@@ -12,7 +12,7 @@ Map.loadZipJson = function(){
 };
 
 Map.loadParkingJson = function(){
-  map.data.loadGeoJson('data/Bicycle_Parking_pdx.geojson');
+  map.data.loadGeoJson('/data/Bicycle_Parking_pdx.geojson');
 };
 
 Map.showBikeLayer = function(){
