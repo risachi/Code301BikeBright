@@ -98,12 +98,13 @@ font-size: 20px;
   justify-content: space-around;
   display: flex;
   width: 400px;
+  color: #fff
 }
 
 .main-nav nav a {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color: #fff;
+  display: none;
 }
 
 .nav-line {
