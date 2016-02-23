@@ -36,3 +36,8 @@ footer {
   margin-left: 5em;
   margin-right: -6em;
 }
+
+/****** Map Page Styles ********/
+#map-page {
+  height: 100%;
+}
