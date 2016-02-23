@@ -4,7 +4,6 @@ Includes basic elements (body, html, h1, h2,div, li, p), no classes or ids.  Nam
 */
 body {
   font-size: 1.3rem;
-  line-height: 1.2;
   background-color: #d8d8d8;
   margin: 0;
 }
@@ -13,8 +12,6 @@ header {
   margin: 0;
   height: 600px;
   min-height: 100vh;
-}
-.bg-img {
 }
 
 img {
