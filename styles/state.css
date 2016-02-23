@@ -2,8 +2,8 @@
 State is used when you are changing the appearance of the layout or modules.  It does not apply to  the base.  State implies a JavaSCript dependency.
 Naming convention is that you use an action verb for class names:  .div-is-hidden
 */
-@media screen and (min-width: 50rem) {
-	body {
-
+@media screen and (min-width: 800px) {
+	.main-nav nav a {
+    display: inline-block;
 	}
 }
