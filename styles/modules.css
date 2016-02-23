@@ -352,6 +352,17 @@ margin-bottom: 40px;
 #loading {
   display: none;
 }
+#map-page {
+  margin: 0;
+  width: 100%;
+}
+#control {
+  text-align: center;
+}
+#map {
+  margin: 0 auto;
+}
+
 
 /*DISCUSS PAGE*/
 #disqus_thread {
