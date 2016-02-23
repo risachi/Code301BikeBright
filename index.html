@@ -12,6 +12,20 @@
   <link rel="stylesheet" href="styles/state.css">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="scripts/icon/bicycle.ico" type="image/x-icon">
+  <!-- Map specific styles here -->
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      height: 70%;
+      width: 70%;
+    }
+  </style>
 </head>
 
 <body>
@@ -43,7 +57,7 @@
       massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive.</p>
   </div>
   <section class="links">
-    <div class="map">
+    <div class="map-image">
       <p>Map
         <p>
     </div>
@@ -77,6 +91,20 @@
         photo booth marfa disrupt. Offal synth tousled shoreditch.</p>
     </div>
   </div>
+  <div id="control">
+    <h2>Find A Place to Lock Your Bike</h2>
+    <p>To find the best place to lock your bike, just choose one of the options below.</p>
+
+    <div id="form">
+      <input id="address-input" class="controls" type="text" placeholder="Enter Location">
+      <button id="current-location">Use Current Location</button><span id="loading">Loading...</span>
+      <br />
+      <input id="parking" type="checkbox" value="parking"> Show Parking<br>
+      <br>
+        <div class="clear"></div>
+    </div>
+  </div>
+  <div id="map"></div>
   <section id="contact-us" class="section-content">
     <h1>Contact us</h1>
     <hr>
@@ -136,7 +164,15 @@
   </div>
   <script src="scripts/vendor/jquery-1.11.3.js"></script>
   <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
+  <script src="scripts/vendor/page.js"></script>
   <script src='data/bicycleParking.js'></script>
+  <script src="scripts/model/map.js"></script>
+  <script src="scripts/view/mapView.js"></script>
+  <script src="scripts/controller/mapController.js"></script>
+  <script src="scripts/routes.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=Map.setDefaultMap">
+  </script>
   </footer>
 
 </body>
