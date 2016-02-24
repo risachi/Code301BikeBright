@@ -34,7 +34,7 @@ Map.showBikeLayer = function(){
 
 Map.showHeatMap = function() {
   var heatmap = new google.maps.visualization.HeatmapLayer({
-    data: new google.maps.LatLng(45.6572477,-122.76191711425781)
+    data: heatMapData()
   });
   heatmap.setMap(map);
 };
@@ -163,4 +163,9 @@ Map.addressBarInput = function(){
 //window.addEventListener('resize', initMap);
 
 module.Map = Map;
+
+$(function() {
+  // Map.showHeatMap();
+});
+
 })(window);
