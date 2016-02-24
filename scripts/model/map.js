@@ -164,8 +164,9 @@ Map.addressBarInput = function(){
 
 module.Map = Map;
 
-$(function() {
-  // Map.showHeatMap();
-});
-
 })(window);
+
+
+$(function() {
+  Map.showHeatMap();
+});
