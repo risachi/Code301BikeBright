@@ -6,26 +6,12 @@
   <title>Scaffolding Site</title>
   <link rel="stylesheet" href="/scripts/icon/font-awesome/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Satisfy|Raleway:400,600|Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/modules.css">
-  <link rel="stylesheet" href="styles/state.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/modules.css">
+  <link rel="stylesheet" href="/styles/state.css">
   <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="scripts/icon/bicycle.ico" type="image/x-icon">
-  <!-- Map specific styles here -->
-  <style type="text/css">
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    #map {
-      height: 70%;
-      width: 70%;
-    }
-  </style>
+  <link rel="shortcut icon" href="/scripts/icon/bicycle.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -37,10 +23,10 @@
       </div>
       <div class="main-nav">
         <nav>
-          <span class="fa fa-home"><a class="nav-line" href="index.html">HOME</a></span>
-          <a class="nav-line" href="">ABOUT</a>
-          <span class="fa fa-map-marker"><a class="nav-line" href="map.html">MAP</a></span>
-          <span class="fa fa-comments-o"><a class="nav-line" href="discuss.html">DISCUSS</a></span>
+          <span class="fa fa-home"><a class="nav-line" href="/">HOME</a></span>
+          <a class="nav-line" href="/">ABOUT</a>
+          <span class="fa fa-map-marker"><a class="nav-line" href="/map">MAP</a></span>
+          <span class="fa fa-comments-o"><a class="nav-line" href="/discuss">DISCUSS</a></span>
         </nav>
       </div>
     </div>
@@ -50,12 +36,13 @@
       <h2>Your bike safe</h2>
     </div>
   </header>
+  <!-- Home Page Tab -->
+  <div id="home-page">
   <div class="section-content">
     <h1>What we are</h1>
     <hr>
     <p>I have hinted that I would often jerk poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the
       massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive.</p>
-  </div>
   <section class="links">
     <div class="map-image">
       <p>Map
@@ -66,6 +53,10 @@
         <p>
     </div>
   </section>
+    </div>
+</div>
+  <!-- About Tab -->
+<div id="about-page">
   <section class="section-content">
     <h1>who we are</h1>
     <hr>
@@ -91,9 +82,11 @@
         photo booth marfa disrupt. Offal synth tousled shoreditch.</p>
     </div>
   </div>
-  <div id="map-page">
-    <div id="control">
-      <h1>Find A Place to Lock Your Bike</h1>
+</div>
+  <!-- Map Tab -->
+<div id="map-page">
+  <div id="control">
+    <h1>Find A Place to Lock Your Bike</h1>
     <div id="form">
       <div id="loading">Loading...</div>
       <br />
@@ -106,8 +99,15 @@
     </div>
     </div>
   <div id="map"></div>
-  </div>
+</div>
+<!-- Discuss tab will go here -->
+<div id="discuss-page">
+  <div id="disqus_thread"></div>
 
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+<!-- Footer area -->
   <section id="contact-us" class="section-content">
     <h1>Contact us</h1>
     <hr>
@@ -137,14 +137,14 @@
   <footer>
     <div>
       <nav id="footer-nav">
-        <a href="index.html">HOME</a>
+        <a href="/">HOME</a>
         <a href="">ABOUT</a>
         <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-bicycle fa-stack-1x fa-inverse"></i>
       </span>
-      <a href="map.html">MAP</a>
-      <a href="discuss.html">DISCUSS</a>
+      <a href="/map">MAP</a>
+      <a href="/discuss">DISCUSS</a>
     </nav>
     </div>
     <div class="social-icons">
@@ -165,14 +165,17 @@
   <div class="bottom-footer">
     <p>Copyright 2016, All Rights Reserved.</p>
   </div>
-  <script src="scripts/vendor/jquery-1.11.3.js"></script>
-  <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
-  <script src="scripts/vendor/page.js"></script>
-  <script src='data/bicycleParking.js'></script>
-  <script src="scripts/model/map.js"></script>
-  <script src="scripts/view/mapView.js"></script>
-  <script src="scripts/controller/mapController.js"></script>
-  <script src="scripts/routes.js"></script>
+  <script src="/scripts/vendor/jquery-1.11.3.js"></script>
+  <script src="/scripts/vendor/handlebars-v4.0.5.js"></script>
+  <script src="/scripts/vendor/page.js"></script>
+  <script src='/data/bicycleParking.js'></script>
+  <script src="/scripts/model/map.js"></script>
+  <script src="/scripts/view/mapView.js"></script>
+  <script src='scripts/view/disqusView.js'></script>
+  <script src="/scripts/controller/homeController.js"></script>
+  <script src="/scripts/controller/mapController.js"></script>
+  <script src="/scripts/controller/discussController.js"></script>
+  <script src="/scripts/routes.js"></script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=Map.setDefaultMap">
   </script>
