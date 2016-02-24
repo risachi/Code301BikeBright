@@ -5,6 +5,7 @@
   mapView.defaultMapView= function(){
     Map.initMap= function() {
       Map.setDefaultMap();
+      Map.showHeatMap();
     };
   };
 
@@ -24,8 +25,10 @@
     });
   };
 
+
+
   mapView.handleMapOptions();
-// mapView.defaultMapView();
+  mapView.defaultMapView();
 
 // mapView.parkingMapView= function(){
 //   Map.initMap= function() {

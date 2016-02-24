@@ -98,6 +98,7 @@
       <br />
     </div>
     </div>
+    <button onclick="toggleHeatmap()">Toggle Heatmap</button>
   <div id="map"></div>
 </div>
 <!-- Discuss tab will go here -->
@@ -165,10 +166,12 @@
   <div class="bottom-footer">
     <p>Copyright 2016, All Rights Reserved.</p>
   </div>
+
   <script src="/scripts/vendor/jquery-1.11.3.js"></script>
   <script src="/scripts/vendor/handlebars-v4.0.5.js"></script>
   <script src="/scripts/vendor/page.js"></script>
   <script src='/data/bicycleParking.js'></script>
+  <script src='/data/heatMapData.js'></script>
   <script src="/scripts/model/map.js"></script>
   <script src="/scripts/view/mapView.js"></script>
   <script src='scripts/view/disqusView.js'></script>
@@ -177,10 +180,10 @@
   <script src="/scripts/controller/mapController.js"></script>
   <script src="/scripts/controller/discussController.js"></script>
   <script src="/scripts/routes.js"></script>
-  <script async defer
+  <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=Map.setDefaultMap">
   </script>
-  </footer>
+    </footer>
 
 </body>
 </html>
