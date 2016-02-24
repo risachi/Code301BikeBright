@@ -469,3 +469,8 @@ margin-bottom: 40px;
     font-size: 3vw;
   }
 }
+
+#home-page {
+  overflow:auto !important;
+  width: 100%;
+}
