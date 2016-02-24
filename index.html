@@ -6,12 +6,12 @@
   <title>Scaffolding Site</title>
   <link rel="stylesheet" href="/scripts/icon/font-awesome/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Satisfy|Raleway:400,600|Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/modules.css">
-  <link rel="stylesheet" href="styles/state.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/modules.css">
+  <link rel="stylesheet" href="/styles/state.css">
   <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="scripts/icon/bicycle.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/scripts/icon/bicycle.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -23,14 +23,16 @@
       </div>
       <div class="main-nav">
         <nav>
-          <span class="fa fa-home"><a class="nav-line" href="index.html">HOME</a></span>
-          <a class="nav-line" href="">ABOUT</a>
-          <span class="fa fa-map-marker"><a class="nav-line" href="map.html">MAP</a></span>
-          <span class="fa fa-comments-o"><a class="nav-line" href="discuss.html">DISCUSS</a></span>
+          <span class="fa fa-home"><a class="nav-line" href="/">HOME</a></span>
+          <span class="nav-line" href="/about">ABOUT</span>
+          <span class="fa fa-map-marker"><a class="nav-line" href="/map">MAP</a></span>
+          <span class="fa fa-comments-o"><a class="nav-line" href="/discuss">DISCUSS</a></span>
         </nav>
       </div>
     </div>
     <hr class="title-line">
+
+<!-- Home Page Tab -->
     <div class="title-subline">
       <h1>here to keep</h1>
       <h2>Your bike safe</h2>
@@ -52,6 +54,8 @@
         <p>
     </div>
   </section>
+
+  <!-- About Tab -->
   <section class="section-content">
     <h1>who we are</h1>
     <hr>
@@ -77,6 +81,8 @@
         photo booth marfa disrupt. Offal synth tousled shoreditch.</p>
     </div>
   </div>
+
+  <!-- Map Tab -->
   <div id="map-page">
     <div id="control">
       <h1>Find A Place to Lock Your Bike</h1>
@@ -93,7 +99,9 @@
     </div>
   <div id="map"></div>
   </div>
+<!-- Discuss tab will go here -->
 
+<!-- Footer area -->
   <section id="contact-us" class="section-content">
     <h1>Contact us</h1>
     <hr>
@@ -151,14 +159,14 @@
   <div class="bottom-footer">
     <p>Copyright 2016, All Rights Reserved.</p>
   </div>
-  <script src="scripts/vendor/jquery-1.11.3.js"></script>
-  <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
-  <script src="scripts/vendor/page.js"></script>
-  <script src='data/bicycleParking.js'></script>
-  <script src="scripts/model/map.js"></script>
-  <script src="scripts/view/mapView.js"></script>
-  <script src="scripts/controller/mapController.js"></script>
-  <script src="scripts/routes.js"></script>
+  <script src="/scripts/vendor/jquery-1.11.3.js"></script>
+  <script src="/scripts/vendor/handlebars-v4.0.5.js"></script>
+  <script src="/scripts/vendor/page.js"></script>
+  <script src='/data/bicycleParking.js'></script>
+  <script src="/scripts/model/map.js"></script>
+  <script src="/scripts/view/mapView.js"></script>
+  <script src="/scripts/controller/mapController.js"></script>
+  <script src="/scripts/routes.js"></script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=Map.setDefaultMap">
   </script>

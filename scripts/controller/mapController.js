@@ -1,7 +1,7 @@
 (function(module) {
   var mapController = {};
   mapController.index = function(){
-  mapView.defaultMapView();
+  //mapView.defaultMapView();
 };
 
   module.mapController = mapController;
