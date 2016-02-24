@@ -7,6 +7,7 @@ var pos;
 var userCoords;
 var portlandCenter = {lat: 45.5296879, lng: -122.6526475};
 var seattleCenter = {lat: 47.6149938, lng: -122.4763323};
+var heatmap;
 
 Map.loadZipJson = function(){
   map.data.loadGeoJson('data/zipcodes.json');
@@ -33,9 +34,9 @@ Map.showBikeLayer = function(){
 
 Map.showHeatMap = function() {
   var heatmap = new google.maps.visualization.HeatmapLayer({
-    data: heatMapData(),
-    map: map
+    data: new google.maps.LatLng(45.6572477,-122.76191711425781)
   });
+  heatmap.setMap(map);
 };
 
 Map.setZipStyle = function(feature){
@@ -46,8 +47,7 @@ Map.getCurrentLocation = function (){
   if(navigator.geolocation){
     function error(err){
         alert('unable to locate current location');
-        console.log("error loading users geolocation" + err.code + ": "
-        + err.message);
+        console.log("error loading users geolocation" + err.code + ": " + err.message);
     }
     function success(pos) {
       userCoords = pos.coords;
