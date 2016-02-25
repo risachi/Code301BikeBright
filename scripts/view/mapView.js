@@ -5,7 +5,7 @@
   mapView.defaultMapView= function(){
     Map.initMap= function() {
       Map.setDefaultMap();
-      Map.showHeatMap();
+      // Map.showHeatMap();
     };
   };
 
@@ -26,26 +26,9 @@
   };
 
 
-
-  mapView.handleMapOptions();
   mapView.defaultMapView();
+  mapView.handleMapOptions();
 
-// mapView.parkingMapView= function(){
-//   Map.initMap= function() {
-//     Map.setDefaultMap();
-//     Map.loadParkingJson();
-//     Map.loadZipJson();
-//   };
-// };
-// mapView.parkingMapView();
-
-//  mapView.zipMapView= function(){
-//   Map.initMap= function() {
-//     Map.setDefaultMap();
-//
-//   };
-// }
-// mapView.zipMapView();
 
   module.mapView = mapView;
 })(window);
