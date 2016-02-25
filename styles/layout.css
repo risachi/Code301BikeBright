@@ -3,8 +3,9 @@ attribution to Jonathan Snook "Scalable and Modular Architecture for CSS".
 Defines the major layout containers on the page.  Sidebar, Header, Main/content.
 Naming conventions for classes in the layout begin with the letter l. As an example:  .l-main-inline.  You could also preface them with "layout-":  .layout-header, .layout-content, .layout-sidebar
 */
+
 header {
-  background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("/img/2-bikes.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/2-bikes.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -14,8 +15,10 @@ header {
   min-height: 0;
   height: 250px;
 }
+
 .l-topheader {
-  border-bottom: 8px double rgba(51, 51, 51, 0.17);;
+  border-bottom: 8px double rgba(51, 51, 51, 0.17);
+  ;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
@@ -23,13 +26,4 @@ header {
 .l-nav {
   background-color: #888;
   text-align: center;
-}
-.l-main {
-
-}
-.l-aside {
-
-}
-.l-footer {
-
 }
