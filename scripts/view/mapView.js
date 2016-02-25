@@ -5,7 +5,7 @@
   mapView.defaultMapView= function(){
     Map.initMap= function() {
       Map.setDefaultMap();
-      Map.showHeatMap();
+      // Map.showHeatMap();
     };
   };
 
