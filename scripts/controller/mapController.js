@@ -5,6 +5,10 @@
   $('#about-page').hide();
   $('#map-page').show();
   $('#discuss-page').hide();
+
+
+  Map.setDefaultMap();
+  Map.showHeatMap();
   };
 
   module.mapController = mapController;

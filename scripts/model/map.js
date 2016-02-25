@@ -106,6 +106,6 @@ module.Map = Map;
 })(window);
 
 
-$(function() {
-  Map.showHeatMap();
-});
+// $(function() {
+//   Map.showHeatMap();
+// });
