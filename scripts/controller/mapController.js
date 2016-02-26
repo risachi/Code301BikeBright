@@ -7,8 +7,8 @@
     $('#map-page').show();
 
     Map.setDefaultMap();
-    //Map.showHeatMap();
-    //$('#crime').prop('checked', true);
+    $('#crime').prop('checked', true);
+    Map.showHeatMap();
   };
 
   module.mapController = mapController;
