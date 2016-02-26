@@ -402,6 +402,11 @@ p.m-posteddate {
   width: 100%;
 }
 
+.maplegend {
+  margin-left: 5em;
+  margin-top: -1.5em;
+}
+
 #control {
   text-align: center;
 }

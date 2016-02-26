@@ -28,25 +28,29 @@
   Map.showHeatMap = function() {
     var g = [
       'rgba(0, 255, 255, 0)',
-      'rgba(0, 255, 255, 1)',
-      'rgba(0, 191, 255, 1)',
-      'rgba(0, 127, 255, 1)',
-      'rgba(0, 63, 255, 1)',
-      'rgba(0, 0, 255, 1)',
-      'rgba(0, 0, 223, 1)',
-      'rgba(0, 0, 191, 1)',
-      'rgba(0, 0, 159, 1)',
-      'rgba(0, 0, 127, 1)',
-      'rgba(63, 0, 91, 1)',
-      'rgba(127, 0, 63, 1)',
-      'rgba(191, 0, 31, 1)',
+      'rgba(234, 253, 26, 1)',
+      'rgba(242, 253, 26, 1)',
+      'rgba(253, 238, 26, 1)',
+      'rgba(253, 223, 26, 1)',
+      'rgba(253, 204, 26, 1)',
+      'rgba(253, 189, 26, 1)',
+      'rgba(253, 174, 26, 1)',
+      'rgba(253, 155, 26, 1)',
+      'rgba(253, 140, 26, 1)',
+      'rgba(253, 121, 26, 1)',
+      'rgba(253, 113, 26, 1)',
+      'rgba(253, 79, 26, 1)',
       'rgba(255, 0, 0, 1)'
     ];
-    var heatmap = new google.maps.visualization.HeatmapLayer({
+    heatmap = new google.maps.visualization.HeatmapLayer({
       data: heatMapData(),
       gradient: g
     });
     heatmap.setMap(map);
+  };
+
+  Map.removeHeatMap = function(){
+    heatmap.setMap(null);
   };
 
   Map.getCurrentLocation = function() {
