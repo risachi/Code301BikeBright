@@ -3,6 +3,20 @@ attribution to Jonathan Snook "Scalable and Modular Architecture for CSS".
 these are the modules that will be in the major layout containers that you defined in the layout.css.  These are tabs, customized list view, buttons.  Modules contain the content and are the majority of your site
 ***********************************/
 
+h1 {
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  color: #DAFC38;
+  font-family: 'Satisfy', cursive;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .m-text-align {
   text-align: center;
   margin: 0;
@@ -77,9 +91,7 @@ p.m-posteddate {
 .title h1 {
   display: flex;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  color: #fff;
   font-size: 46px;
   letter-spacing: 0.08px;
   line-height: 42px;
@@ -87,8 +99,6 @@ p.m-posteddate {
 
 .title h2 {
   display: flex;
-  font-family: 'Satisfy', cursive;
-  color: #DAFC38;
   padding-left: 10px;
   font-size: 20px;
 }
@@ -146,21 +156,18 @@ p.m-posteddate {
 }
 
 .title-subline {
+  display: none;
   position: absolute;
   left: 200px;
   top: 250px;
 }
 
 .title-subline h1 {
-  font-family: Raleway;
   text-transform: uppercase;
   font-size: 72px;
-  color: #fff;
 }
 
 .title-subline h2 {
-  font-family: satisfy;
-  color: #181b34;
   font-size: 48px;
   position: absolute;
   top: 90px;
@@ -176,10 +183,8 @@ p.m-posteddate {
 
 .section-content h1 {
   /* WHAT WE ARE: */
-  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 64px;
-  color: #FFFFFF;
   letter-spacing: 25.18px;
   line-height: 85px;
   text-align: center;
@@ -195,7 +200,6 @@ p.m-posteddate {
 }
 
 .section-content p {
-  font-family: 'Open Sans', sans-serif;
   font-size: 13.49px;
   color: #666666;
   letter-spacing: 0.5px;
@@ -243,6 +247,14 @@ p.m-posteddate {
   justify-content: space-around;
 }
 
+#profiles a {
+  color: #3a427b;
+}
+
+#profiles a:visited {
+  color: #6b73ba;
+}
+
 .profile-photo {
   display: flex;
   flex-direction: column;
@@ -261,7 +273,6 @@ p.m-posteddate {
 }
 
 .profile-photo p {
-  font-family: 'Open Sans', sans-serif;
   font-size: 13.49px;
   color: #666666;
   letter-spacing: 0.5px;
@@ -271,7 +282,7 @@ p.m-posteddate {
 
 .profile-photo h3 {
   font-family: 'Satisfy', cursive;
-  color: #181B34;
+  color: #3a427b;
   font-size: 26px;
   text-align: center;
   margin-bottom: 0;
@@ -382,7 +393,6 @@ p.m-posteddate {
 }
 
 .bottom-footer p {
-  font-family: 'Open Sans', sans-serif;
   font-size: 13.49px;
   color: #181B34;
   letter-spacing: 0.5px;
@@ -429,8 +439,8 @@ p.m-posteddate {
 
 #map {
   margin: 0 auto;
-  height: 70%;
-  width: 70%;
+  height: inherit;;
+  width: 100%;
 }
 
 /*DISCUSS PAGE*/
@@ -443,41 +453,61 @@ p.m-posteddate {
 }
 
 @media screen and (max-width: 800px) {
-  .title {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .logo {
-    margin: 0 auto;
-  }
-
-  .main-nav {
-    margin: 0 auto;
-  }
-
-  .title-line {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 799px) {
   header {
-    height: 300px;
+    height: 400px;
     min-height: 0vh;
   }
-
-  .logo {
+  .title {
+    margin-left: 0px;
     margin: 0 auto;
+    width: 90%;
+  }
+  .fa {
+    font-size: 36px;
+  }
+  .main-nav {
+    margin-right: 0px;
+  }
+  .logo {
+    margin: 0;
+    margin-left: 30px;
+  }
+  .title-subline {
+    display: none;
   }
 
+
+@media screen and (max-width: 750px) {
+  header {
+    height: 150px;
+    /*min-height: 0vh;*/
+  }
+
+  .title {
+    margin-left: 20px;
+  }
+  .fa {
+    font-size: 18px;
+  }
+  .title h1 {
+    font-size: 1.5rem;
+  }
+  .logo {
+    margin-left: 0px;
+  }
+  .main-nav {
+    margin-right: 0px;
+  }
   .main-nav nav {
-    width: 300px;
+    justify-content: space-between;
+    max-width: 100px;
+    margin-left: 90px;
   }
 
   .main-nav nav a {
     font-size: 3vw;
   }
+
 
   .title-subline {
     display: none;
