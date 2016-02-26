@@ -3,6 +3,10 @@ attribution to Jonathan Snook "Scalable and Modular Architecture for CSS".
 these are the modules that will be in the major layout containers that you defined in the layout.css.  These are tabs, customized list view, buttons.  Modules contain the content and are the majority of your site
 ***********************************/
 
+h1 {
+  color: #FFFFFF;
+}
+
 .m-text-align {
   text-align: center;
   margin: 0;
@@ -79,7 +83,6 @@ p.m-posteddate {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  color: #fff;
   font-size: 46px;
   letter-spacing: 0.08px;
   line-height: 42px;
@@ -155,7 +158,6 @@ p.m-posteddate {
   font-family: Raleway;
   text-transform: uppercase;
   font-size: 72px;
-  color: #fff;
 }
 
 .title-subline h2 {
@@ -179,7 +181,6 @@ p.m-posteddate {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 64px;
-  color: #FFFFFF;
   letter-spacing: 25.18px;
   line-height: 85px;
   text-align: center;
