@@ -28,6 +28,7 @@
         console.log('crime is checked');
       } else {
         console.log('crime is unchecked');
+        Map.showHeatMap();
       }
     });
   };

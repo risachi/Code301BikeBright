@@ -8,6 +8,7 @@
 
     Map.setDefaultMap();
     Map.showHeatMap();
+    $('#crime').prop('checked', true);
   };
 
   module.mapController = mapController;
