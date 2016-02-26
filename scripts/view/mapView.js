@@ -12,14 +12,20 @@
   mapView.handleMapOptions = function() {
     /* Current Location Button */
     $('#current-location').on('click', Map.getCurrentLocation);
-    /* Show Parking Checkbox */
+    /* Parking Checkbox */
     $('#parking').on('change', function() {
       if (this.checked) {
-        console.log('parking is checked');
         Map.loadParkingJson();
       } else {
-        console.log('parking is unchecked');
         Map.removeParkingJson();
+      }
+    });
+    /* Crime Checkbox */
+    $('#crime').on('change', function(){
+      if(this.checked) {
+        Map.showHeatMap();
+      } else {
+        Map.removeHeatMap();
       }
     });
   };

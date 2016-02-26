@@ -7,6 +7,7 @@
     $('#map-page').show();
 
     Map.setDefaultMap();
+    $('#crime').prop('checked', true);
     Map.showHeatMap();
   };
 
