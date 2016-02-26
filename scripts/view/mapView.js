@@ -12,7 +12,7 @@
   mapView.handleMapOptions = function() {
     /* Current Location Button */
     $('#current-location').on('click', Map.getCurrentLocation);
-    /* Show Parking Checkbox */
+    /* Parking Checkbox */
     $('#parking').on('change', function() {
       if (this.checked) {
         console.log('parking is checked');
@@ -20,6 +20,14 @@
       } else {
         console.log('parking is unchecked');
         Map.removeParkingJson();
+      }
+    });
+    /* Crime Checkbox */
+    $('#crime').on('change', function(){
+      if(this.checked) {
+        console.log('crime is checked');
+      } else {
+        console.log('crime is unchecked');
       }
     });
   };
