@@ -42,11 +42,15 @@
       'rgba(191, 0, 31, 1)',
       'rgba(255, 0, 0, 1)'
     ];
-    var heatmap = new google.maps.visualization.HeatmapLayer({
+    heatmap = new google.maps.visualization.HeatmapLayer({
       data: heatMapData(),
       gradient: g
     });
     heatmap.setMap(map);
+  };
+
+  Map.removeHeatMap = function(){
+    heatmap.setMap(null);
   };
 
   Map.getCurrentLocation = function() {

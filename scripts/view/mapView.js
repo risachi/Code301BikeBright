@@ -26,9 +26,10 @@
     $('#crime').on('change', function(){
       if(this.checked) {
         console.log('crime is checked');
+        Map.showHeatMap();
       } else {
         console.log('crime is unchecked');
-        Map.showHeatMap();
+        Map.removeHeatMap();
       }
     });
   };
