@@ -2,29 +2,34 @@
 attribution to Jonathan Snook "Scalable and Modular Architecture for CSS".
 Includes basic elements (body, html, h1, h2,div, li, p), no classes or ids.  Naming convention is that you just use the name of the element.  Very simple.   This could be your css reset/normalize.  The author (Jonathan Snook) recommends not using reset or normalize.
 */
+
+/**** Map specific ****/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/********/
 body {
   font-size: 1.3rem;
-  line-height: 1.2;
   background-color: #d8d8d8;
   margin: 0;
 }
 
 header {
   margin: 0;
-  height: 600px;
-  min-height: 100vh;
-}
-.bg-img {
+  height: 250px;
 }
 
-img {
-}
 h1 {
   font-size: 1.5rem;
 }
+
 h2 {
   font-size: 1.0rem;
 }
+
 h3 {
   font-size: .85rem;
 }
@@ -34,8 +39,13 @@ footer {
   width: 100%;
 }
 
-/* **********Disqus styles********** */
+/***********Disqus styles***********/
 #disqus_thread {
   margin-left: 5em;
   margin-right: -6em;
+}
+
+/****** Map Page Styles ********/
+#map-page {
+  height: 100%;
 }

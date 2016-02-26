@@ -1,3 +1,0 @@
-// function heatMapData() {
-//   return heatMapData;
-// }

@@ -3,50 +3,71 @@ attribution to Jonathan Snook "Scalable and Modular Architecture for CSS".
 these are the modules that will be in the major layout containers that you defined in the layout.css.  These are tabs, customized list view, buttons.  Modules contain the content and are the majority of your site
 ***********************************/
 
+h1 {
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  color: #DAFC38;
+  font-family: 'Satisfy', cursive;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .m-text-align {
   text-align: center;
   margin: 0;
 }
-.m-topheader-text {
- font-family: 'Montserrat', sans-serif;
- margin: 1rem;
- text-align: center;
 
+.m-topheader-text {
+  font-family: 'Montserrat', sans-serif;
+  margin: 1rem;
+  text-align: center;
 }
+
 .m-topheader-h2 {
   font-family: 'Montserrat', sans-serif;
   color: #666;
   text-align: center;
 }
+
 .m-topheader-h3 {
-  font-family:font-family: 'Caudex', serif;
+  font-family: font-family: 'Caudex', serif;
   color: #666;
   text-align: center;
 }
-.m-nav-list  {
+
+.m-nav-list {
   list-style-type: none;
   margin: .5rem .75rem;
   display: inline-block;
 }
+
 .m-nav-list li {
-color: #fff;
-font-size: 1.0rem;
-text-decoration: none;
-display: inline-block;
-margin-right: .5rem;
+  color: #fff;
+  font-size: 1.0rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: .5rem;
 }
 
 .m-nav-images {
   width: 35px;
   height: 35px;
 }
+
 .m-accordian-panel {
   display: none;
 }
+
 .m-filters {
   list-style-type: none;
 }
-p.m-posteddate{
+
+p.m-posteddate {
   color: rgba(128, 128, 128, 0.55);
 }
 
@@ -57,6 +78,7 @@ p.m-posteddate{
   align-items: baseline;
   margin-left: 90px;
 }
+
 .title {
   display: flex;
   flex-direction: row;
@@ -66,32 +88,27 @@ p.m-posteddate{
   padding-top: 20px;
 }
 
-#blueTitle {
-    background-color: #181B34;
+.title h1 {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 46px;
+  letter-spacing: 0.08px;
+  line-height: 42px;
 }
 
-.title h1 {
-display: flex;
-text-transform: uppercase;
-font-family: 'Raleway', sans-serif;
-font-weight: 600;
-color: #fff;
-font-size: 46px;
-letter-spacing: 0.08px;
-line-height: 42px;
-}
 .title h2 {
-display: flex;
-font-family: 'Satisfy', cursive;
-color: #DAFC38;
-padding-left: 10px;
-font-size: 20px;
+  display: flex;
+  padding-left: 10px;
+  font-size: 20px;
 }
+
 .title-line {
   border: 1px solid #DAFC38;
   width: 90%;
   margin-top: -10px;
 }
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -102,56 +119,61 @@ font-size: 20px;
   justify-content: space-around;
   display: flex;
   width: 400px;
+  color: #fff
 }
 
 .main-nav nav a {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color: #fff;
+  display: none;
 }
 
 .nav-line {
-	display: inline-block;
-	position: relative;
-	padding-bottom: 3px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
   color: #ddd;
 }
+
 .nav-line:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 3px;
-	width: 0px;
-	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
+
 .nav-line:hover {
   color: #DAFC38;
   cursor: pointer;
 }
+
 .nav-line:hover:after {
-	width: 100%;
-	background: #181B34;
+  width: 100%;
+  background: #181B34;
 }
+
 .title-subline {
+  display: none;
   position: absolute;
   left: 200px;
   top: 250px;
 }
+
 .title-subline h1 {
-  font-family: Raleway;
   text-transform: uppercase;
   font-size: 72px;
-  color: #fff;
 }
+
 .title-subline h2 {
-  font-family: satisfy;
-  color: #181b34;
   font-size: 48px;
   position: absolute;
   top: 90px;
   left: 20px;
 }
+
 /*What we are/who we are section*/
 .section-content {
   margin: 0 auto;
@@ -161,29 +183,27 @@ font-size: 20px;
 
 .section-content h1 {
   /* WHAT WE ARE: */
-font-family: 'Raleway', sans-serif;
-font-weight: 600;
-font-size: 64px;
-color: #FFFFFF;
-letter-spacing: 25.18px;
-line-height: 85px;
-text-align: center;
-text-transform: uppercase;
+  font-weight: 600;
+  font-size: 64px;
+  letter-spacing: 25.18px;
+  line-height: 85px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .section-content hr {
   /* Line: */
-border: 1px solid #181B34;
-width: 70%;
-margin-top: -40px;
-margin-bottom: 40px;
+  border: 1px solid #181B34;
+  width: 70%;
+  margin-top: -40px;
+  margin-bottom: 40px;
 }
+
 .section-content p {
-font-family: 'Open Sans', sans-serif;
-font-size: 13.49px;
-color: #666666;
-letter-spacing: 0.5px;
-line-height: 33px;
+  font-size: 13.49px;
+  color: #666666;
+  letter-spacing: 0.5px;
+  line-height: 33px;
 }
 
 /*LINKS SECTION*/
@@ -191,29 +211,32 @@ line-height: 33px;
   display: flex;
   flex-direction: row;
 }
-.links div {
+
+.links > a {
   width: 50%;
   height: 450px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 64px;
+  text-decoration: none;
   color: #FFFFFF;
   letter-spacing: 20px;
-  line-height: 85px;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center
 }
+
 .links div p {
   margin: 0;
 }
-.map {
-  background:linear-gradient(rgba(24, 26, 52, 0.6),rgba(24, 26, 52, 0.6)),url("/img/single-bike.jpg");
+
+.map-image {
+  background: linear-gradient(rgba(24, 26, 52, 0.6), rgba(24, 26, 52, 0.6)), url("/img/single-bike.jpg");
   background-size: cover;
 }
+
 .discuss {
-  background:linear-gradient(rgba(218,252,56,0.4),rgba(218,252,56,0.4)),url("/img/lady-bicycle.jpg");
+  background: linear-gradient(rgba(218, 252, 56, 0.4), rgba(218, 252, 56, 0.4)), url("/img/lady-bicycle.jpg");
   background-size: cover;
 }
 
@@ -224,6 +247,15 @@ line-height: 33px;
   margin: 0;
   justify-content: space-around;
 }
+
+#profiles a {
+  color: #3a427b;
+}
+
+#profiles a:visited {
+  color: #6b73ba;
+}
+
 .profile-photo {
   display: flex;
   flex-direction: column;
@@ -232,44 +264,50 @@ line-height: 33px;
   background-color: #fff;
   border:
 }
-.profile-photo img{
+
+.profile-photo img {
   margin: 0 auto;
   margin-top: 20px;
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
+
 .profile-photo p {
-font-family: 'Open Sans', sans-serif;
-font-size: 13.49px;
-color: #666666;
-letter-spacing: 0.5px;
-line-height: 33px;
-padding: 10px;
+  font-size: 13.49px;
+  color: #666666;
+  letter-spacing: 0.5px;
+  line-height: 33px;
+  padding: 10px;
 }
+
 .profile-photo h3 {
   font-family: 'Satisfy', cursive;
-  color: #181B34;
+  color: #3a427b;
   font-size: 26px;
   text-align: center;
   margin-bottom: 0;
 }
+
 /*Contact Us Section*/
 #contact-us {
   background-color: #181B34;
   max-width: 100%;
   padding-bottom: 30px;
 }
+
 #contact-us hr {
-border: 1px solid #FFFFFF;
-width: 70%;
-margin-top: -40px;
-margin-bottom: 40px;
+  border: 1px solid #FFFFFF;
+  width: 70%;
+  margin-top: -40px;
+  margin-bottom: 40px;
 }
+
 #contact-section {
   display: flex;
   justify-content: space-around;
 }
+
 .contact-background {
   background-color: #fff;
   width: 500px;
@@ -278,18 +316,22 @@ margin-bottom: 40px;
   padding: 30px 0 30px 0;
   margin-left: 50px;
 }
+
 #contact_form {
   margin: 0;
 }
+
 .input {
   display: flex;
   width: 300px;
   height: 30px;
   border-radius: 4px;
 }
+
 #message {
   height: 200px;
 }
+
 #submit_button {
   display: block;
   width: 305px;
@@ -300,6 +342,7 @@ margin-bottom: 40px;
   color: #fff;
   background-color: #d8d8d8;
 }
+
 #home-map {
   width: 400px;
   height: 300px;
@@ -310,41 +353,47 @@ margin-bottom: 40px;
 #footer-nav {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-#footer-nav a{
+
+#footer-nav a {
   margin: 0 20px 0 20px;
   font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
   color: #181B34;
   text-decoration: none;
 }
+
 .fa-circle {
   color: #181B34
 }
+
 .social-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
 }
+
 .custom-social {
-    display: flex;
-    overflow: hidden;
-    width: 35px;
-    height: 35px;
-    color: white;
-    background-color: #181B34;
-    margin: 0 20px 0 20px;
+  display: flex;
+  overflow: hidden;
+  width: 35px;
+  height: 35px;
+  color: white;
+  background-color: #181B34;
+  margin: 0 20px 0 20px;
 }
+
 .social-brand {
   display: flex;
   margin: auto;
   align-items: center;
 }
+
 .bottom-footer p {
-  font-family: 'Open Sans', sans-serif;
   font-size: 13.49px;
   color: #181B34;
   letter-spacing: 0.5px;
@@ -356,4 +405,176 @@ margin-bottom: 40px;
 /* Map Page */
 #loading {
   display: none;
+}
+
+#map-page {
+  margin: 0;
+  width: 100%;
+}
+
+.maplegend {
+  margin-left: 5em;
+  margin-top: -1.5em;
+}
+
+#control {
+  text-align: center;
+}
+
+#address-input {
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+
+#current-location {
+  /*display: block;
+  width: 305px;
+  height: 50px;*/
+  margin-bottom: 2%;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #181B34;
+  background-color: #fff;
+}
+
+#map {
+  margin: 0 auto;
+  height: inherit;;
+  width: 100%;
+}
+
+/*DISCUSS PAGE*/
+#disqus_thread {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    height: 400px;
+    min-height: 0vh;
+  }
+  .title {
+    margin-left: 0px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .nav-icon {
+    font-size: 36px;
+  }
+  .main-nav {
+    margin-right: 0px;
+  }
+  .logo {
+    margin: 0;
+    margin-left: 30px;
+  }
+  .title-subline {
+    display: none;
+  }
+
+
+@media screen and (max-width: 750px) {
+  header {
+    height: 150px;
+    /*min-height: 0vh;*/
+  }
+
+  .title {
+    margin-left: 20px;
+  }
+  .nav-icon {
+    font-size: 18px;
+  }
+  .title h1 {
+    font-size: 1.5rem;
+  }
+  .logo {
+    margin-left: 0px;
+  }
+  .main-nav {
+    margin-right: 0px;
+  }
+  .main-nav nav {
+    justify-content: space-between;
+    max-width: 100px;
+    margin-left: 90px;
+  }
+
+  .main-nav nav a {
+    font-size: 3vw;
+  }
+
+
+  .title-subline {
+    display: none;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .links a {
+    width: 100%
+  }
+
+  #profiles {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .profile-photo {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .profile-photo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section-content h1 {
+    font-size: 5vw;
+    letter-spacing: 10px;
+    line-height: 40px;
+  }
+
+  .section-content hr {
+    margin-top: 0;
+  }
+
+  #contact-section {
+    flex-direction: column;
+  }
+
+  .contact-background {
+    margin: 0;
+    width: 100%;
+  }
+
+  #contact-us hr {
+    margin-top: 0;
+  }
+
+  .map-section {
+    width: 100%
+  }
+
+  #home-map {
+    width: 100%;
+    height: 300px;
+  }
+
+  #footer-nav a {
+    font-size: 3vw;
+  }
+}
+
+#home-page {
+  overflow: auto !important;
+  width: 100%;
 }

@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Scaffolding Site</title>
+  <title>Bike Bright</title>
   <link rel="stylesheet" href="/scripts/icon/font-awesome/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Satisfy|Raleway:400,600|Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/modules.css">
-  <link rel="stylesheet" href="styles/state.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/modules.css">
+  <link rel="stylesheet" href="/styles/state.css">
   <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="scripts/icon/bicycle.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/scripts/icon/bicycle.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -21,101 +21,143 @@
         <h1>Bike</h1>
         <h2>Bright</h2>
       </div>
+
       <div class="main-nav">
         <nav>
-          <a class="nav-line" href="index.html">HOME</a>
-          <a class="nav-line" href="">ABOUT</a>
-          <a class="nav-line" href="map.html">MAP</a>
-          <a class="nav-line" href="discuss.html">DISCUSS</a>
+          <span class="nav-icon fa fa-home"> <a class="nav-line" href="/">HOME</a></span>
+          <span class="nav-icon fa fa-heart"> <a class="nav-line" href="/about">ABOUT</a></span>
+          <span class="nav-icon fa fa-map-marker"> <a class="nav-line" href="/map">MAP</a></span>
+          <span class="nav-icon fa fa-comments-o"> <a class="nav-line" href="/discuss">DISCUSS</a></span>
         </nav>
       </div>
     </div>
+
     <hr class="title-line">
     <div class="title-subline">
       <h1>here to keep</h1>
       <h2>Your bike safe</h2>
     </div>
   </header>
-  <div class="section-content">
-    <h1>What we are</h1>
-    <hr>
-    <p>I have hinted that I would often jerk poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant rolling and swaying of both. But this was not the only jamming jeopardy he was exposed to. Unappalled by the
-      massacre made upon them during the night, the sharks now freshly and more keenly allured by the before pent blood which began to flow from the carcass—the rabid creatures swarmed round it like bees in a beehive.</p>
+
+  <!-- Home Page Tab -->
+  <div id="home-page">
+    <div class="section-content">
+      <h1>What we are</h1>
+      <hr>
+      <p>More commuters bike to work in Portland than in any other major U.S. city, and bicycle theft is on the rise. Our goal is to help you figure out where to park your bicycle by showing you where bicycles get stolen most often - so you can avoid parking in those areas. Bike more, worry less.</p>
+    </div>
+      <section class="links">
+        <a class="map-image" href="/map">
+          <p>Map</p>
+        </a>
+        <a class="discuss" href="/discuss">
+          <p>Discuss</p>
+        </a>
+      </section>
   </div>
-  <section class="links">
-    <div class="map">
-      <p>Map
-        <p>
+
+  <!-- About Tab -->
+  <div id="about-page">
+    <section class="section-content">
+      <h1>who we are</h1>
+      <hr>
+    </section>
+
+    <div id="profiles">
+      <div class="profile-photo">
+        <h3>Danielle</h3><img src="img/danielle.jpg">
+        <p>A commuter bicyclist for the past 5 years in both New York City and Portland, OR. Currently rides a Trek 7.2fx. Sold her car and hasn't regretted the decision yet.</p>
+      </div>
+      <div class="profile-photo">
+        <h3>Lisa</h3><img src="img/lisa.jpg">
+        <p>A casual rider on bright sunny days. Currently rides an upright <a href='http://www.linusbike.com/products/mixte-8?variant=1118258560'>Linus Mixte 8</a> through the city and doesn't like to get dirt on her mint-green bicycle frame. Also has her eye on a <a href='http://publicbikes.com/p/PUBLIC-C7i-2015-best-Dutch-bike-commuter-step-through-Nexus-7-internal-gear-omafiets-womens-loop-frame-bicycle-reviews'>bright red Public C7i</a>, for making bold statements.</p>
+      </div>
+      <div class="profile-photo">
+        <h3>Doug</h3><img src="img/doug.png">
+        <p>An avid street and mountain bike enthusiast for the last 30 years. Currently rides a Trek 8000 on the trail and a Specialized Roubaix Pro on the road. Favorite rides include the <a href="http://bicycleadventures.com/destinations/oregon-bike-tours/Oregon-Crater-Lake-Bike-Tour"> Bicyle Adventure's Crater Lake Tour </a> and the <a href="http://sanjuanhuts.com/mtb/telluride-moab"> San Juan Hut's Telluride to Moab Back Country Tour</a></p>
+      </div>
+      <div class="profile-photo">
+        <h3>Jonathan</h3><img src="img/jonathan.jpg">
+        <p>Fingerstache try-hard artisan whatever cold-pressed tacos, etsy disrupt aesthetic forage pug. Church-key thundercats selvage pitchfork gluten-free asymmetrical, cornhole kinfolk distillery blue bottle. Aesthetic food truck brunch art party, DIY
+          photo booth marfa disrupt. Offal synth tousled shoreditch.</p>
+      </div>
     </div>
-    <div class="discuss">
-      <p>Discuss
-        <p>
-    </div>
-  </section>
-  <section class="section-content">
-    <h1>who we are</h1>
-    <hr>
-  </section>
-  <div id="profiles">
-    <div class="profile-photo">
-      <h3>Danielle</h3><img src="img/danielle.jpg">
-      <p>Kickstarter godard twee, heirloom skateboard biodiesel forage gluten-free vice everyday carry venmo hella ramps next level. Fixie retro fap typewriter artisan. Flannel tousled tilde tumblr brunch, authentic trust fund cronut bicycle rights venmo
-        umami. Bushwick pitchfork sartorial chillwave, before they sold out messenger bag church-key literally wayfarers humblebrag truffaut master cleanse stumptown retro.</p>
-    </div>
-    <div class="profile-photo">
-      <h3>Lisa</h3><img src="img/lisa.jpg">
-      <p>Cold-pressed cornhole humblebrag ramps, farm-to-table chillwave green juice kogi dreamcatcher gluten-free biodiesel ugh slow-carb. Cronut flexitarian 8-bit DIY retro cray. Listicle keytar selfies, retro chambray messenger bag hammock artisan.</p>
-    </div>
-    <div class="profile-photo">
-      <h3>Doug</h3><img src="img/doug.png">
-      <p>Chillwave organic plaid, craft beer trust fund bicycle rights iPhone knausgaard readymade. Readymade messenger bag trust fund, mlkshk distillery kogi direct trade lumbersexual helvetica whatever. Artisan occupy fixie mumblecore banjo pug squid,
-        shoreditch put a bird on it meh vegan raw denim.</p>
-    </div>
-    <div class="profile-photo">
-      <h3>Jonathan</h3><img src="img/jonathan.jpg">
-      <p>Fingerstache try-hard artisan whatever cold-pressed tacos, etsy disrupt aesthetic forage pug. Church-key thundercats selvage pitchfork gluten-free asymmetrical, cornhole kinfolk distillery blue bottle. Aesthetic food truck brunch art party, DIY
-        photo booth marfa disrupt. Offal synth tousled shoreditch.</p>
-    </div>
+    <section id="contact-us" class="section-content">
+      <h1>Contact us</h1>
+      <hr>
+
+      <div id="contact-section">
+        <div class="contact-background">
+          <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <input id="name" class="input" name="name" type="text" value="" placeholder="Full Name:">
+              <br>
+            </div>
+            <div class="row">
+              <input id="email" class="input" name="email" type="text" value="" placeholder="email:">
+              <br>
+            </div>
+            <div class="row">
+              <textarea id="message" class="input" name="message" rows="7" cols="30" placeholder="Message:"></textarea>
+              <br>
+            </div>
+            <input id="submit_button" type="submit" value="SEND">
+          </form>
+        </div>
+        <div class="map-section">
+          <div id="home-map"><img src="img/ourlocation.png"></div>
+          <p>P. 503.555.5555<br>920 SW 3rd Ave<br>Portland, OR 97204</p>
+        </div>
+      </div>
+    </section>
   </div>
-  <section id="contact-us" class="section-content">
-    <h1>Contact us</h1>
-    <hr>
-    <div id="contact-section">
-      <div class="contact-background">
-        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-          <div class="row">
-            <input id="name" class="input" name="name" type="text" value="" placeholder="Full Name:" />
-            <br />
-          </div>
-          <div class="row">
-            <input id="email" class="input" name="email" type="text" value="" placeholder="email:" />
-            <br />
-          </div>
-          <div class="row">
-            <textarea id="message" class="input" name="message" rows="7" cols="30" placeholder="Message:"></textarea>
-            <br />
-          </div>
-          <input id="submit_button" type="submit" value="SEND" />
-        </form>
+
+  <!-- Map Tab -->
+  <div id="map-page">
+    <div id="control">
+      <h1>Find A Place to Lock Your Bike</h1>
+
+      <div id="form">
+        <div id="loading">Loading...</div>
+        <br />
+        <input id="address-input" class="controls" type="text" placeholder="Enter Location">
+        <button id="current-location">Use Current Location</button>
+        <br />
+        <input id="parking" type="checkbox" value="parking">Parking
+        <input id="crime" type="checkbox">Crime
+        <br />
+        <br />
       </div>
-      <div class="map-section">
-        <div id="home-map"></div>
-        <p>P. 503.555.5555</br>920 SW 3rd Ave</br>Portland, OR 97204</p>
-      </div>
-  </section>
+    </div>
+
+
+    <div id="map"></div>
+    <img class="maplegend" src="img/biketheftdensity.png"/>
+  </div>
+
+  <!-- Discuss Tab -->
+  <div id="discuss-page">
+    <div id="disqus_thread"></div>
+
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+
+  <!-- Footer -->
+
   <footer>
     <div>
       <nav id="footer-nav">
-        <a href="index.html">HOME</a>
-        <a href="">ABOUT</a>
+        <a href="/">HOME</a>
+        <a href="/about">ABOUT</a>
         <span class="fa-stack fa-lg">
         <i class="fa fa-circle fa-stack-2x"></i>
         <i class="fa fa-bicycle fa-stack-1x fa-inverse"></i>
       </span>
-      <a href="map.html">MAP</a>
-      <a href="discuss.html">DISCUSS</a>
-    </nav>
+        <a href="/map">MAP</a>
+        <a href="/discuss">DISCUSS</a>
+      </nav>
     </div>
+
     <div class="social-icons">
       <span class="custom-social">
         <span class="fa fa-facebook social-brand"></span>
@@ -130,14 +172,26 @@
         <span class="fa fa-github social-brand"></span>
       </span>
     </div>
-  </footer>
-  <div class="bottom-footer">
-    <p>Copyright 2016, All Rights Reserved.</p>
-  </div>
-  <script src="scripts/vendor/jquery-1.11.3.js"></script>
-  <script src="scripts/vendor/handlebars-v4.0.5.js"></script>
-  <script src='data/bicycleParking.js'></script>
+
+    <div class="bottom-footer">
+      <p>&copy; 2016, All Rights Reserved.</p>
+    </div>
+
+    <script src="/scripts/vendor/jquery-1.11.3.js"></script>
+    <script src="/scripts/vendor/page.js"></script>
+    <script src='/data/heatMapData.js'></script>
+    <script src="/scripts/model/map.js"></script>
+    <script src="/scripts/view/mapView.js"></script>
+    <script src='scripts/view/discussView.js'></script>
+    <script src="/scripts/controller/homeController.js"></script>
+    <script src="/scripts/controller/aboutController.js"></script>
+    <script src="/scripts/controller/mapController.js"></script>
+    <script src="/scripts/controller/discussController.js"></script>
+    <script src="/scripts/routes.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAL4My8uOTKO54E1L89htl7d3gv2WRYRQ&libraries=places,visualization&callback=Map.setDefaultMap">
+    </script>
   </footer>
 
 </body>
+
 </html>
