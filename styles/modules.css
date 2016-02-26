@@ -156,6 +156,7 @@ p.m-posteddate {
 }
 
 .title-subline {
+  display: none;
   position: absolute;
   left: 200px;
   top: 250px;
@@ -438,8 +439,8 @@ p.m-posteddate {
 
 #map {
   margin: 0 auto;
-  height: 70%;
-  width: 70%;
+  height: inherit;;
+  width: 100%;
 }
 
 /*DISCUSS PAGE*/
@@ -452,41 +453,61 @@ p.m-posteddate {
 }
 
 @media screen and (max-width: 800px) {
-  .title {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .logo {
-    margin: 0 auto;
-  }
-
-  .main-nav {
-    margin: 0 auto;
-  }
-
-  .title-line {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 799px) {
   header {
-    height: 300px;
+    height: 400px;
     min-height: 0vh;
   }
-
-  .logo {
+  .title {
+    margin-left: 0px;
     margin: 0 auto;
+    width: 90%;
+  }
+  .fa {
+    font-size: 36px;
+  }
+  .main-nav {
+    margin-right: 0px;
+  }
+  .logo {
+    margin: 0;
+    margin-left: 30px;
+  }
+  .title-subline {
+    display: none;
   }
 
+
+@media screen and (max-width: 750px) {
+  header {
+    height: 150px;
+    /*min-height: 0vh;*/
+  }
+
+  .title {
+    margin-left: 20px;
+  }
+  .fa {
+    font-size: 18px;
+  }
+  .title h1 {
+    font-size: 1.5rem;
+  }
+  .logo {
+    margin-left: 0px;
+  }
+  .main-nav {
+    margin-right: 0px;
+  }
   .main-nav nav {
-    width: 300px;
+    justify-content: space-between;
+    max-width: 100px;
+    margin-left: 90px;
   }
 
   .main-nav nav a {
     font-size: 3vw;
   }
+
 
   .title-subline {
     display: none;

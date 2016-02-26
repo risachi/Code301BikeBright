@@ -19,8 +19,7 @@ body {
 
 header {
   margin: 0;
-  height: 600px;
-  min-height: 100vh;
+  height: 250px;
 }
 
 h1 {
