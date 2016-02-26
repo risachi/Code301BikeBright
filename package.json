@@ -1,12 +1,12 @@
 {
-  "name": "mvc-blog",
+  "name": "bike-bright",
   "version": "1.0.0",
-  "description": "As we now complete our MVC conversation, we can refactor our app to use good MVC separation of concerns.",
+  "description": "A single page application that is designed to give bike riders an simple and effective way to determine high theft areas as well as locations to lock a bike.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Code Fellows",
+  "author": "Team BikeBright",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
