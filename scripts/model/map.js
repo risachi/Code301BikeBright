@@ -74,8 +74,6 @@
           console.log('hello');
         }
 
-        //var greenMarker = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
-
         currentLocationMarker = new google.maps.Marker({
           position: currentLocation,
           map: map,
@@ -130,7 +128,10 @@
     autocomplete.bindTo('bounds', map);
     var marker = new google.maps.Marker({
       position: {lat: 45.516463, lng: -122.675868},
-      map: map
+      map: map,
+      icon: {
+        url: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+      }
     });
     marker.setVisible(false);
 
