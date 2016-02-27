@@ -2,6 +2,8 @@
   var Map = {};
   var map;
   var parkingMarkers;
+  var currentLocationMarker;
+  var previousMarker;
   var pos;
   var userCoords;
   var portlandCenter = {
@@ -65,8 +67,27 @@
           lat: userCoords.latitude,
           lng: userCoords.longitude
         };
+
+        /* Removes the previous marker if the user has already clicked the current location button */
+        if(previousMarker){
+          previousMarker.setVisible(false);
+        }
+
+        currentLocationMarker = new google.maps.Marker({
+          position: currentLocation,
+          map: map,
+          icon: {
+            url: '/img/star.png',
+            scaledSize: new google.maps.Size(20, 20)
+          }
+        });
+
         map.setCenter(currentLocation);
         map.setZoom(17);
+        currentLocationMarker.setVisible(true);
+
+        previousMarker = currentLocationMarker;
+
         /* Clear out address input field if a location was already added */
         (document.getElementById('address-input')).value = '';
         /* Hides loading indicator */
@@ -104,24 +125,33 @@
 
     var autocomplete = new google.maps.places.Autocomplete(address);
     autocomplete.bindTo('bounds', map);
+    var marker = new google.maps.Marker({
+      position: {lat: 45.516463, lng: -122.675868},
+      map: map,
+      icon: {
+        url: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+      }
+    });
+    marker.setVisible(false);
 
     autocomplete.addListener('place_changed', function() {
 
-
-      var place = autocomplete.getPlace();
+    var place = autocomplete.getPlace();
       if (!place.geometry) {
         window.alert("Autocomplete's returned place contains no geometry");
         return;
-      }
+    }
 
-      if (place.geometry.viewport) {
-        map.fitBounds(place.geometry.viewport);
-      } else {
-        map.setCenter(place.geometry.location);
-        map.setZoom(17);
-        /* Clear out address input field if a location was already added */
-        (document.getElementById('address-input')).value = '';
+    if (place.geometry.viewport) {
+      map.fitBounds(place.geometry.viewport);
+    } else {
+      map.setCenter(place.geometry.location);
+      map.setZoom(17);
+      /* Clear out address input field if a location was already added */
+      (document.getElementById('address-input')).value = '';
       }
+      marker.setPosition(place.geometry.location);
+      marker.setVisible(true);
     });
   };
 
