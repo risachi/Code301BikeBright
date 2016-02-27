@@ -2,6 +2,8 @@
   var Map = {};
   var map;
   var parkingMarkers;
+  var currentLocationMarker;
+  var previousMarker;
   var pos;
   var userCoords;
   var portlandCenter = {
@@ -65,8 +67,30 @@
           lat: userCoords.latitude,
           lng: userCoords.longitude
         };
+
+        /* Removes the previous marker if the user has already clicked the current location button */
+        if(previousMarker){
+          previousMarker.setVisible(false);
+          console.log('hello');
+        }
+
+        //var greenMarker = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
+
+        currentLocationMarker = new google.maps.Marker({
+          position: currentLocation,
+          map: map,
+          icon: {
+            url: '/img/star.png',
+            scaledSize: new google.maps.Size(20, 20)
+          }
+        });
+
         map.setCenter(currentLocation);
         map.setZoom(17);
+        currentLocationMarker.setVisible(true);
+
+        previousMarker = currentLocationMarker;
+
         /* Clear out address input field if a location was already added */
         (document.getElementById('address-input')).value = '';
         /* Hides loading indicator */
