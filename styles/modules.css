@@ -160,6 +160,7 @@ p.m-posteddate {
   position: absolute;
   left: 200px;
   top: 250px;
+  pointer-events: none;
 }
 
 .title-subline h1 {
