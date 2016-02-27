@@ -175,6 +175,10 @@ p.m-posteddate {
 }
 
 /*What we are/who we are section*/
+#home-page > .section-content {
+  height: 400px;
+  margin-top: 150px;
+}
 .section-content {
   margin: 0 auto;
   max-width: 70%;
