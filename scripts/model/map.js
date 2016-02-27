@@ -71,7 +71,6 @@
         /* Removes the previous marker if the user has already clicked the current location button */
         if(previousMarker){
           previousMarker.setVisible(false);
-          console.log('hello');
         }
 
         currentLocationMarker = new google.maps.Marker({

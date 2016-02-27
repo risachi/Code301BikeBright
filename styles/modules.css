@@ -405,6 +405,8 @@ p.m-posteddate {
 /* Map Page */
 #loading {
   display: none;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #map-page {
@@ -440,7 +442,7 @@ p.m-posteddate {
 
 #map {
   margin: 0 auto;
-  height: 50%;
+  height: 70%;
   width: 70%;
 }
 
