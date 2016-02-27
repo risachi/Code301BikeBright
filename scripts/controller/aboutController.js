@@ -5,6 +5,9 @@
     $('#map-page').hide();
     $('#discuss-page').hide();
     $('#about-page').show();
+
+    $(window).off('scroll');
+    $('header').removeClass("expanded");
   };
 
   module.aboutController = aboutController;
